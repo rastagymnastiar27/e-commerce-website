@@ -1,82 +1,54 @@
 import React from "react";
 import Heading from "../Shared/Heading";
 import ProductCard from "./ProductCard";
+import data from "../../products.json"; // Adjust the path to your JSON file if needed
 
-// images import
-import Img1 from "../../assets/product/p-1.jpg";
-import Img2 from "../../assets/product/p-2.jpg";
-import Img3 from "../../assets/product/p-3.jpg";
-import Img4 from "../../assets/product/p-4.jpg";
-import Img5 from "../../assets/product/p-5.jpg";
-import Img6 from "../../assets/product/p-9.jpg";
-import Img7 from "../../assets/product/p-7.jpg";
+// Import images
+import nike from "../../assets/product/nike.png";
+import docmart from "../../assets/product/1460.png";
+import belts from "../../assets/product/belts.png";
+import hats from "../../assets/product/hats.png";
+import jackets from "../../assets/product/jackets.png";
+import tops from "../../assets/product/tops.png";
+import jeans from "../../assets/product/jeans.png";
+import rings from "../../assets/product/rings.png";
 
-const ProductsData = [
-  {
-    id: 1,
-    img: Img1,
-    title: "Boat Headphone",
-    price: "120",
-    aosDelay: "0",
-  },
-  {
-    id: 2,
-    img: Img2,
-    title: "Rocky Mountain",
-    price: "420",
-    aosDelay: "200",
-  },
-  {
-    id: 3,
-    img: Img3,
-    title: "Goggles",
-    price: "320",
-    aosDelay: "400",
-  },
-  {
-    id: 4,
-    img: Img4,
-    title: "Printed ",
-    price: "220",
-    aosDelay: "600",
-  },
-];
-const ProductsData2 = [
-  {
-    id: 1,
-    img: Img5,
-    title: "Boat Headphone",
-    price: "120",
-    aosDelay: "0",
-  },
-  {
-    id: 2,
-    img: Img6,
-    title: "Rocky Mountain",
-    price: "420",
-    aosDelay: "200",
-  },
-  {
-    id: 3,
-    img: Img7,
-    title: "Goggles",
-    price: "320",
-    aosDelay: "400",
-  },
-  {
-    id: 4,
-    img: Img5,
-    title: "Printed ",
-    price: "220",
-    aosDelay: "600",
-  },
-];
+// Map image names to imported files
+const images = {
+  "nike.png": nike,
+  "1460.png": docmart,
+  "jackets.png": jackets,
+  "belts.png": belts,
+  "hats.png": hats,
+  "tops.png": tops,
+  "jeans.png": jeans,
+  "rings.png": rings,
+
+};
+
 const Products = () => {
+  // Transform JSON data to match ProductCard requirements
+  const ProductsData = data.footwear.map((item) => ({
+    id: item.id,
+    img: images[item.imgName],
+    title: item.title,
+    price: item.price,
+    aosDelay: item.aosDelay,
+  }));
+
+  const ProductsData2 = data.Outerwear.map((item) => ({
+    id: item.id,
+    img: images[item.imgName],
+    title: item.title,
+    price: item.price,
+    aosDelay: item.aosDelay,
+  }));
+
   return (
     <div>
       <div className="container">
         {/* Header section */}
-        <Heading title="Our Products" subtitle={"Explore Our Products"} />
+        <Heading title="Our Catalogs" subtitle={"Explore Our Items"} />
         {/* Body section */}
         <ProductCard data={ProductsData} />
         <ProductCard data={ProductsData2} />

@@ -56,7 +56,7 @@ const Category = () => {
                 <p className="mb-[2px] text-white">Fashion</p>
                 <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
-                  Jeans
+                  Baggy Jeans
                 </p>
                 <Button
                   text="Browse"

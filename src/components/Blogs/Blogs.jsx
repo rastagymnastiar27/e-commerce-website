@@ -8,7 +8,7 @@ import Img3 from "../../assets/blogs/blog-3.jpg";
 
 const BlogData = [
   {
-    title: "How to choose perfect smartwatch",
+    title: "Skena Culture: Kekuatan Identitas Gen Z Masa Kini",
     subtitle:
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Dilshad",
@@ -16,7 +16,7 @@ const BlogData = [
     aosDelay: "0",
   },
   {
-    title: "How to choose perfect gadget",
+    title: "Outfit Skena: Ekspresi Identitas Budaya Anak Muda",
     subtitle:
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Satya",
@@ -24,7 +24,7 @@ const BlogData = [
     aosDelay: "200",
   },
   {
-    title: "How to choose perfect VR headset",
+    title: "Fenomena Skena dan Polisi Skena di Tengah Kawula Muda",
     subtitle:
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Sabir",
@@ -34,7 +34,7 @@ const BlogData = [
 ];
 const Blogs = () => {
   return (
-    <div className="my-12">
+    <div className="my-16">
       <div className="container">
         {/* Header section */}
         <Heading title="Recent News" subtitle={"Explore Our Blogs"} />

@@ -5,10 +5,9 @@ import Category from "./components/Category/Category";
 import Category2 from "./components/Category/Category2";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
-import Partners from "./components/Partners/Partners.jsx";
 
-import headphone from "./assets/hero/docmart.png";
-import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
+import docmart from "./assets/hero/2.png";
+import vinyl from "./assets/category/vinyl.png";
 
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
@@ -19,26 +18,26 @@ import "aos/dist/aos.css";
 
 const BannerData = {
   discount: "30% OFF",
-  title: "Fine Smile",
-  date: "10 Jan to 28 Jan",
-  image: headphone,
-  title2: "Air Solo Bass",
+  title: "Fine kick!!",
+  date: "15 Nov to 31 Dec",
+  image: docmart,
+  title2: "Dr.Martens 1460",
   title3: "Winter Sale",
   title4:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  bgColor: "#f42c37",
+  bgColor: "#561E1F",
 };
 
 const BannerData2 = {
   discount: "30% OFF",
-  title: "Happy Hours",
-  date: "14 Jan to 28 Jan",
-  image: smartwatch2,
-  title2: "Smart Solo",
+  title: "Happy Music!",
+  date: "15 Nov to 31 Dec",
+  image: vinyl,
+  title2: "Antique Vinyl",
   title3: "Winter Sale",
   title4:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  bgColor: "#2dcc6f",
+  bgColor: "#A69563",
 };
 
 const App = () => {
@@ -69,7 +68,6 @@ const App = () => {
       <Products />
       <Banner data={BannerData2} />
       <Blogs />
-      <Partners />
       <Footer />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
