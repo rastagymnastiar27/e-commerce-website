@@ -1,6 +1,6 @@
 import React from "react";
 import Image1 from "../../assets/category/tops.png";
-import Image2 from "../../assets/category/headphones.png";
+import Image2 from "../../assets/category/jackets-1.png";
 import Image3 from "../../assets/category/shoes.png";
 import Button from "../Shared/Button";
 
@@ -38,7 +38,7 @@ const Category = () => {
                 <p className="mb-[2px] text-white">Fashion</p>
                 <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
-                  Headphones
+                  Outerwear
                 </p>
                 <Button
                   text="Browse"
