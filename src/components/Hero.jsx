@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import Image1 from "../../assets/hero/docmart.png";
-import Image2 from "../../assets/hero/hats.png";
-import Image3 from "../../assets/hero/jacket.png";
-import Button from "../Shared/Button";
+import Image1 from "../assets/hero/docmart.png";
+import Image2 from "../assets/hero/hats.png";
+import Image3 from "../assets/hero/jacket.png";
+import Button from "../components/Button.jsx";
 
 const HeroData = [
   {

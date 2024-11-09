@@ -1,10 +1,10 @@
 import React from "react";
-import Heading from "../Shared/Heading";
+import Heading from "../components/Heading";
 
 // import images
-import Img1 from "../../assets/blogs/blog-1.jpg";
-import Img2 from "../../assets/blogs/blog-2.jpg";
-import Img3 from "../../assets/blogs/blog-3.jpg";
+import Img1 from "../assets/blogs/blog-1.jpg";
+import Img2 from "../assets/blogs/blog-2.jpg";
+import Img3 from "../assets/blogs/blog-3.jpg";
 
 const BlogData = [
   {
@@ -47,7 +47,7 @@ const Blogs = () => {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.title}
-              className="bg-white dark:bg-gray-900"
+              className="bg-white dark:bg-gray-900 shadow-lg rounded-lg"
             >
               {/* image section */}
               <div className="overflow-hidden rounded-2xl mb-2">
