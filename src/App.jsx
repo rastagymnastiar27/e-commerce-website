@@ -20,12 +20,12 @@ const App = () => {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/item" element={<ItemPage />} />
+        <Route path="/item/:id" element={<ItemPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Route>,
-    ),
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    )
   );
 
   return <RouterProvider router={router} />;

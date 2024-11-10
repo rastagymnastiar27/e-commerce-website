@@ -10,35 +10,25 @@ import {
 } from "react-icons/fa6";
 
 const FooterLinks = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "Shop",
-    link: "/shop",
-  },
-  {
-    title: "Blogs",
-    link: "/blogs",
-  },
+  { title: "Home", link: "/" },
+  { title: "Shop", link: "/shop" },
+  { title: "Blogs", link: "/blogs" },
 ];
 
 const Footer = () => {
   return (
-    <div className="dark:bg-gray-950 bg-gray-200 bottom-0">
+    <div className="dark:bg-gray-950 bg-gray-200">
       <div className="container">
         <div className="grid md:grid-cols-3 pb-20">
           {/* company details */}
           <div className="py-8 px-4">
             <a
               href="#"
-              className="text-primary font-mono font-semibold tracking-widest text-2xl uppercase sm:text-3xl
-"
+              className="text-primary font-mono font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
             >
               Culture
             </a>
-            <p className="text-gray-600 dark:text-white/70  lg:pr-24 pt-3">
+            <p className="text-gray-600 dark:text-white/70 lg:pr-24 pt-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
               alias cum
             </p>
