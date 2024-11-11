@@ -53,7 +53,6 @@ _Home Page Desktop_
 
 
 _Home Page Mobile_
-
 ![mobile-culture-view](https://github.com/user-attachments/assets/92ea9886-deb3-462a-b986-29f2b47d8771)
 
 
