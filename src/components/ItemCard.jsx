@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-y-14 gap-x-8 place-items-center">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-14 gap-x-8 place-items-center">
       {/* Card Section */}
       {item.map((item) => (
         <div
@@ -17,7 +17,7 @@ const ItemCard = ({ item }) => {
             <img
               src={item.img}
               alt={item.title}
-              className="h-[180px] w-[260px] object-cover rounded-t-lg transition-transform duration-200 group-hover:scale-150"
+              className="h-[200px] w-[300px] object-cover rounded-t-lg transition-transform duration-200 group-hover:scale-150"
             />
             {/* Hover button */}
             <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 rounded-md">

@@ -47,7 +47,7 @@ const Items = () => {
     // Check if the user is on the home page or shop page
     const isHomePage = pathname === "/";
     const displayedItems = isHomePage
-      ? filteredItems.slice(0, 10)
+      ? filteredItems.slice(0, 8)
       : filteredItems;
 
     setItems(displayedItems);
