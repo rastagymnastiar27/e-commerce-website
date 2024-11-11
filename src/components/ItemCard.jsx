@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-14 gap-x-8 place-items-center">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-y-14 gap-x-8 place-items-center">
       {/* Card Section */}
       {item.map((item) => (
         <div
