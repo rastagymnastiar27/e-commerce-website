@@ -48,11 +48,13 @@ I will develop this project in the future with new features, stay tuned!
 ## **Website Preview**
 
 _Home Page Desktop_
+
 ![culture-full-home](https://github.com/user-attachments/assets/2f562be7-de93-4633-b80d-ef4fee72a6a5)
 
 
 
 _Home Page Mobile_
+
 ![mobile-culture-view](https://github.com/user-attachments/assets/92ea9886-deb3-462a-b986-29f2b47d8771)
 
 
