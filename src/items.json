@@ -1,0 +1,146 @@
+{
+  "footwear": [
+    {
+      "id": 1,
+      "imgName": "nike.png",
+      "title": "Nike TN",
+      "price": "400",
+      "aosDelay": "0"
+    },
+    {
+      "id": 2,
+      "imgName": "jackets.png",
+      "title": "Vintage Leather Jacket",
+      "price": "400",
+      "aosDelay": "200"
+    },
+    {
+      "id": 3,
+      "imgName": "jeans.png",
+      "title": "Vintage Baggy Jeans",
+      "price": "400",
+      "aosDelay": "400"
+    },
+    {
+      "id": 4,
+      "imgName": "1460.png",
+      "title": "Dr.Martens 1460",
+      "price": "400",
+      "aosDelay": "600"
+    },
+    {
+      "id": 5,
+      "imgName": "nike.png",
+      "title": "Nike TN",
+      "price": "400",
+      "aosDelay": "800"
+    },
+    {
+      "id": 6,
+      "imgName": "jackets.png",
+      "title": "Vintage Leather Jacket",
+      "price": "400",
+      "aosDelay": "1000"
+    },
+    {
+      "id": 7,
+      "imgName": "jeans.png",
+      "title": "Vintage Baggy Jeans",
+      "price": "400",
+      "aosDelay": "0"
+    },
+    {
+      "id": 8,
+      "imgName": "1460.png",
+      "title": "Dr.Martens 1460",
+      "price": "400",
+      "aosDelay": "200"
+    },
+    {
+      "id": 9,
+      "imgName": "jeans.png",
+      "title": "Vintage Baggy Jeans",
+      "price": "400",
+      "aosDelay": "400"
+    },
+    {
+      "id": 10,
+      "imgName": "1460.png",
+      "title": "Dr.Martens 1460",
+      "price": "400",
+      "aosDelay": "600"
+    }
+  ],
+  "Outerwear": [
+    {
+      "id": 1,
+      "imgName": "hats.png",
+      "title": "Trucker Hat",
+      "price": "200",
+      "aosDelay": "0"
+    },
+    {
+      "id": 2,
+      "imgName": "belts.png",
+      "title": "Vintage Belts",
+      "price": "200",
+      "aosDelay": "200"
+    },
+    {
+      "id": 3,
+      "imgName": "tops.png",
+      "title": "Jenny Band T-Shirt",
+      "price": "200",
+      "aosDelay": "400"
+    },
+    {
+      "id": 4,
+      "imgName": "rings.png",
+      "title": "Vintage Rings",
+      "price": "200",
+      "aosDelay": "600"
+    },
+    {
+      "id": 5,
+      "imgName": "hats.png",
+      "title": "Trucker Hat",
+      "price": "200",
+      "aosDelay": "800"
+    },
+    {
+      "id": 6,
+      "imgName": "belts.png",
+      "title": "Vintage Belts",
+      "price": "200",
+      "aosDelay": "1000"
+    },
+    {
+      "id": 7,
+      "imgName": "tops.png",
+      "title": "Jenny Band T-Shirt",
+      "price": "200",
+      "aosDelay": "0"
+    },
+    {
+      "id": 8,
+      "imgName": "rings.png",
+      "title": "Vintage Rings",
+      "price": "200",
+      "aosDelay": "200"
+    },
+    {
+      "id": 9,
+      "imgName": "tops.png",
+      "title": "Jenny Band T-Shirt",
+      "price": "200",
+      "aosDelay": "400"
+    },
+    {
+      "id": 10,
+      "imgName": "rings.png",
+      "title": "Vintage Rings",
+      "price": "200",
+      "aosDelay": "600"
+    }
+  ]
+}
