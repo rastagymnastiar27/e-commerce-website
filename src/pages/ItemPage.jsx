@@ -33,7 +33,7 @@ const ItemPage = () => {
       <section className="dark:bg-gray-950 bg-gray-200">
         <div className="container m-auto left-0 py-6">
           <Link
-            to="/jobs"
+            to="/shop"
             className="text-black hover:text-primary flex items-center"
           >
             <FaArrowLeft className="mr-2" /> Back to catalog page
