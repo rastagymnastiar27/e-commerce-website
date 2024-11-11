@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/Items";
+import Items from "../components/Items";
 import Popup from "../components/Popup";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +23,7 @@ const shopPage = () => {
 
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden py-10">
-      <Products />
+      <Items />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
   );

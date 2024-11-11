@@ -64,7 +64,7 @@ const Items = () => {
 
   return (
     <div>
-      <div className="container py-10">
+      <div className="container py-6">
         {/* Header section */}
         <Heading title="Our Catalogs" subtitle={"Explore Our Items"} />
         {/* Body section */}
