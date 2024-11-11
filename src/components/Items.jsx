@@ -60,51 +60,49 @@ const Items = () => {
         {/* Header section */}
         <Heading title="Our Catalogs" subtitle={"Explore Our Items"} />
 
-        {/* Category Dropdown (Hidden on Home Page) */}
-        {pathname !== "/" && (
-          <div className="mb-6 mt-4 flex justify-end">
-            <li className="relative cursor-pointer group list-none">
-              <NavLink
-                to="#"
-                className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
-              >
-                {category === "all"
-                  ? "All Catalogs"
-                  : category.charAt(0).toUpperCase() + category.slice(1)}
-                <FaCaretDown className="group-hover:rotate-180 duration-300" />
-              </NavLink>
+        {/* Category Dropdown */}
+        <div className="mb-6 mt-4 flex justify-end">
+          <li className="relative cursor-pointer group list-none">
+            <NavLink
+              to="#"
+              className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
+            >
+              {category === "all"
+                ? "All Catalogs"
+                : category.charAt(0).toUpperCase() + category.slice(1)}
+              <FaCaretDown className="group-hover:rotate-180 duration-300" />
+            </NavLink>
 
-              <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
-                <ul className="space-y-2">
-                  <li>
-                    <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
-                      onClick={() => setCategory("all")}
-                    >
-                      All Catalogs
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
-                      onClick={() => setCategory("footwear")}
-                    >
-                      Footwear
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
-                      onClick={() => setCategory("Outerwear")}
-                    >
-                      Outerwear
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </div>
-        )}
+            <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
+              <ul className="space-y-2">
+                <li>
+                  <button
+                    className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                    onClick={() => setCategory("all")}
+                  >
+                    All Catalogs
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                    onClick={() => setCategory("footwear")}
+                  >
+                    Footwear
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                    onClick={() => setCategory("Outerwear")}
+                  >
+                    Outerwear
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
 
         {/* Body section */}
         {loading ? <Spinner loading={loading} /> : <ItemCard item={items} />}
