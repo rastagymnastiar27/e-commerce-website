@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+
+import { Link } from "react-router-dom";
+import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
+import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 
 const ItemPage = () => {
   const { id } = useParams(); // Get the item ID from the URL
@@ -26,11 +29,21 @@ const ItemPage = () => {
   }
 
   return (
-    <div>
+    <>
+      <section className="dark:bg-gray-950 bg-gray-200">
+        <div className="container m-auto left-0 py-6">
+          <Link
+            to="/jobs"
+            className="text-black hover:text-primary flex items-center"
+          >
+            <FaArrowLeft className="mr-2" /> Back to catalog page
+          </Link>
+        </div>
+      </section>
       <h1>{itemDetails.title}</h1>
       <p>{itemDetails.description}</p>
       <p>Price: ${itemDetails.price}</p>
-    </div>
+    </>
   );
 };
 
