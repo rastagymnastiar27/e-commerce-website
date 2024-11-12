@@ -20,7 +20,7 @@ const Items = () => {
     // Transform JSON data to match ItemCard requirements
     const footwearData = itemsData.footwear.map((item) => ({
       id: item.id,
-      img: getImagePath(item.imgName), // Use relative path to image
+      img: getImagePath(item.imgName),
       title: item.title,
       price: item.price,
       aosDelay: item.aosDelay,
@@ -28,7 +28,7 @@ const Items = () => {
 
     const outerwearData = itemsData.Outerwear.map((item) => ({
       id: item.id,
-      img: getImagePath(item.imgName), // Use relative path to image
+      img: getImagePath(item.imgName),
       title: item.title,
       price: item.price,
       aosDelay: item.aosDelay,
@@ -56,17 +56,18 @@ const Items = () => {
 
   return (
     <>
-      <div className="container py-6">
+      <div className="container py-6 ">
         {/* Header section */}
         <Heading title="Our Catalogs" subtitle={"Explore Our Items"} />
 
         {/* Category Dropdown (Hidden on Home Page) */}
         {pathname !== "/" && (
-          <div className="mb-6 mt-4 flex justify-end">
-            <li className="relative cursor-pointer group list-none">
+          <div className="mb-6 mt-4 flex justify-center items-center lg:justify-end">
+            {/* Fixed Dropdown Menu with Consistent Width */}
+            <li className="relative cursor-pointer group list-none top-4 lg:right-0">
               <NavLink
                 to="#"
-                className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
+                className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-400 dark:hover:text-white py-2 duration-200 w-40 justify-center"
               >
                 {category === "all"
                   ? "All Catalogs"
@@ -74,11 +75,12 @@ const Items = () => {
                 <FaCaretDown className="group-hover:rotate-180 duration-300" />
               </NavLink>
 
-              <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
+              {/* Dropdown Links */}
+              <div className="absolute z-[9999] hidden group-hover:block w-[130px] rounded-md bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white left-3">
                 <ul className="space-y-2">
                   <li>
                     <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                      className="text-black hover:text-white dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
                       onClick={() => setCategory("all")}
                     >
                       All Catalogs
@@ -86,7 +88,7 @@ const Items = () => {
                   </li>
                   <li>
                     <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                      className="text-black hover:text-white dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
                       onClick={() => setCategory("footwear")}
                     >
                       Footwear
@@ -94,7 +96,7 @@ const Items = () => {
                   </li>
                   <li>
                     <button
-                      className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
+                      className="text-black hover:text-white dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold text-left"
                       onClick={() => setCategory("Outerwear")}
                     >
                       Outerwear

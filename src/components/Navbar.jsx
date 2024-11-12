@@ -23,18 +23,18 @@ const Navbar = ({ handleOrderPopup }) => {
   const handleSearchChange = (e) => setSearchQuery(e.target.value); // Handle search input change
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40 font-mono">
+    <div className=" dark:text-white duration-200 relative z-40 font-mono">
       <div className="py-4">
         <div className="container flex justify-between items-center">
           {/* Logo and Links section */}
           <div className="flex items-center gap-4">
             <NavLink
               to="/"
-              className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl
-"
+              className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
             >
               Culture
             </NavLink>
+
             {/* Menu Items */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
@@ -42,18 +42,18 @@ const Navbar = ({ handleOrderPopup }) => {
                   <li key={index}>
                     <NavLink
                       to={data.link}
-                      className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
+                      className="inline-block px-4 font-semibold text-black hover:text-gray-500 dark:text-gray-400 dark:hover:text-white duration-200"
                     >
-                      {" "}
                       {data.name}
                     </NavLink>
                   </li>
                 ))}
-                {/* Dropdown  */}
+
+                {/* Dropdown */}
                 <li className="relative cursor-pointer group">
                   <NavLink
                     to="#"
-                    className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
+                    className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-400 dark:hover:text-white py-2 duration-200"
                   >
                     Quick Links
                     <span>
@@ -62,12 +62,12 @@ const Navbar = ({ handleOrderPopup }) => {
                   </NavLink>
 
                   {/* Dropdown Links */}
-                  <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white ">
+                  <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white">
                     <ul className="space-y-2">
                       {DropdownLinks.map((data, index) => (
-                        <li>
+                        <li key={index}>
                           <NavLink
-                            className="text-gray-500  dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
+                            className="text-black hover:text-white dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
                             to={data.link}
                           >
                             {data.name}
@@ -81,31 +81,29 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
           </div>
 
-          {/* Right Section for Desktop: Search, Cart, Dark Mode Button */}
+          {/* Right Section for Desktop */}
           <div className="hidden lg:flex justify-between items-center gap-4 font-sans">
-            {/* Search Bar section for desktop */}
             <div className="relative group hidden sm:block">
               <input
                 type="text"
                 placeholder="Search"
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="search-bar"
+                className="search-bar bg-transparent dark:bg-transparent placeholder:text-black 
+                dark:placeholder:text-gray-400"
               />
-              <IoMdSearch
-                className="text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200 cursor-pointer"
-              />
+              <IoMdSearch className="text-xl   text-black group-hover:text-primary dark:text-gray-400 
+              absolute top-1/2 -translate-y-1/2 right-3 duration-200 cursor-pointer" />
             </div>
 
-            {/* Cart Button */}
-            <button className="relative p-3" onClick="/cart">
-              <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
-              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                1 {/* Cart badge */}
+            <button className="relative p-3" onClick={handleOrderPopup}>
+              <FaCartShopping className="text-xl text-black dark:text-gray-400 duration-200" />
+              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
+              items-center justify-center text-xs">
+                1
               </div>
             </button>
 
-            {/* Dark Mode Button */}
             <div>
               <DarkMode />
             </div>
@@ -113,18 +111,16 @@ const Navbar = ({ handleOrderPopup }) => {
 
           {/* Mobile View */}
           <div className="flex lg:hidden items-center gap-4">
-            {/* Cart Button for mobile */}
             <button className="relative p-3" onClick={handleOrderPopup}>
               <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                1 {/* Cart badge */}
+                1
               </div>
             </button>
 
-            {/* Hamburger Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 dark:text-gray-400"
+              className="text-gray-600 dark:text-gray-400 duration-200"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 12h18M3 6h18M3 18h18"></path>
@@ -135,61 +131,47 @@ const Navbar = ({ handleOrderPopup }) => {
       </div>
 
       {/* Full-page menu for small screens */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden">
-          <div className="bg-white dark:bg-gray-900 w-[75%] h-full p-6 absolute right-0 top-0 flex flex-col gap-6">
-            <button onClick={() => setIsMenuOpen(false)} className="self-end text-gray-600 dark:text-gray-400">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden transition-opacity duration-200 h-full ${
+          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div
+          className={`bg-black/10 backdrop-blur-md w-[75%] h-full p-6 absolute right-0 top-0 flex flex-col gap-6 transition-transform duration-200 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <button onClick={() => setIsMenuOpen(false)} className="self-end text-black dark:text-gray-400">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
 
-            {/* Search Bar Above Menu Links for Mobile */}
-            <div className="relative group mb-4">
-              <input
-                type="text"
-                placeholder="Search"
-                value={searchQuery}
-                onChange={handleSearchChange}
-                className="w-full p-2 pl-10 rounded-lg text-gray-700 dark:text-white dark:bg-gray-800 focus:outline-none"
-              />
-              <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-600 dark:text-gray-400" />
-            </div>
-
-            {/* Menu Links for Mobile */}
-            <ul className="flex flex-col items-start gap-4">
-              {MenuLinks.map((data) => (
-                <li key={data.id} className="w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3">
-                  <NavLink to={data.link} className="text-xl font-semibold text-gray-500 hover:text-black dark:hover:text-white">
-                    {data.name}
-                  </NavLink>
-                </li>
-              ))}
-              <li className="relative cursor-pointer group w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3">
-                <NavLink to="#" className="flex items-center gap-[2px] text-xl font-semibold text-gray-500 dark:hover:text-white py-2">
-                  Quick Links
-                  <FaCaretDown className="group-hover:rotate-180 duration-300" />
-                </NavLink>
-                <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
-                  <ul className="space-y-2">
-                    {DropdownLinks.map((data) => (
-                      <li key={data.id}>
-                        <NavLink className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold" to={data.link}>
-                          {data.name}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-              {/* Dark Mode button inside the mobile menu */}
-              <div>
-                <DarkMode />
-              </div>
-            </ul>
+          <div className="relative group mb-4">
+            <input
+              type="text"
+              placeholder="Search"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              className="w-full p-2 pl-10 rounded-lg text-white placeholder:text-gray-400 bg-transparent border-2 border-gray-300 dark:border-gray-700 focus:outline-none"
+            />
+            <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-400 dark:text-gray-400" />
           </div>
+
+          <ul className="flex flex-col items-start gap-4">
+            {MenuLinks.map((data) => (
+              <li key={data.id} className="w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3">
+                <NavLink to={data.link} className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white">
+                  {data.name}
+                </NavLink>
+              </li>
+            ))}
+            <div>
+              <DarkMode />
+            </div>
+          </ul>
         </div>
-      )}
+      </div>
     </div>
   );
 };

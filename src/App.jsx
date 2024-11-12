@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
-import ShopPage from "./Pages/shopPage";
+import ShopPage from "./pages/ShopPage";
 import ItemPage from "./pages/ItemPage";
 import CartPage from "./pages/CartPage";
 import BlogsPage from "./pages/BlogsPage";

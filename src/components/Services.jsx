@@ -45,7 +45,7 @@ const Services = () => {
                 <h1 className="flex flex-col items-center gap-4 lg:text-xl font-bold">
                   {data.title}
                 </h1>
-                <h1 className="flex flex-col items-center gap-4 text-gray-400 text-sm">
+                <h1 className="flex flex-col items-center gap-4 text-gray-600 text-sm">
                   {data.description}
                 </h1>
               </div>
