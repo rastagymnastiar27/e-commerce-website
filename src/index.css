@@ -6,18 +6,31 @@
   .search-bar {
     @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border 
     group-hover:border-black px-3 py-1 focus:outline-none dark:border-black
-    bg-opacity-80 backdrop-blur-md ;
+    bg-opacity-80 backdrop-blur-md;
   }
-  
-  }
+}
 
 @layer utilities {
+  /* Default mobile background: bg-cover and clip */
   .bg-light-theme {
-    @apply bg-[url('/assets/background/light-bg.png')] bg-fixed bg-center bg-cover;
+    @apply bg-[url('/assets/background/mobile-light-bg.png')] bg-fixed bg-contain;
   }
+
   .bg-dark-theme {
-    @apply bg-[url('/assets/background/dark-bg.png')] bg-fixed bg-center bg-cover;
+    @apply bg-[url('/assets/background/mobile-dark-bg.png')] bg-fixed bg-center bg-contain;
   }
+
+  /* lg breakpoints bg */
+  @media (min-width: 1024px) {
+    .bg-light-theme {
+      @apply bg-[url('/assets/background/light-bg.png')] bg-fixed bg-cover;
+    }
+
+    .bg-dark-theme {
+      @apply bg-[url('/assets/background/dark-bg.png')] bg-fixed bg-cover;
+    }
+  }
+
   .form-input {
     @apply w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4;
   }

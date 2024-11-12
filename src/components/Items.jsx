@@ -67,7 +67,7 @@ const Items = () => {
             <li className="relative cursor-pointer group list-none top-4 lg:right-0">
               <NavLink
                 to="#"
-                className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-400 dark:hover:text-white py-2 duration-200 w-40 justify-center"
+                className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-300 dark:hover:text-white py-2 duration-200 w-40 justify-center"
               >
                 {category === "all"
                   ? "All Catalogs"

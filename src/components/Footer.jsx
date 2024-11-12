@@ -18,7 +18,7 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <div className="">
-      <div className="container">
+      <div className="container font-mono">
         <div className="grid md:grid-cols-3 pb-20">
           {/* company details */}
           <div className="py-8 px-4">
@@ -28,7 +28,7 @@ const Footer = () => {
             >
               Culture
             </a>
-            <p className="text-gray-600 dark:text-white/70 lg:pr-24 pt-3">
+            <p className="text-black dark:text-white lg:pr-24 pt-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
               alias cum
             </p>
@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3 text-gray-600 dark:text-gray-400">
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white duration-200">
                 Important Links
               </h1>
               <ul className="space-y-3">
@@ -51,7 +51,7 @@ const Footer = () => {
                   <li key={index}>
                     <Link
                       to={data.link}
-                      className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300"
+                      className="text-black dark:text-white hover:dark:text-gray-400 hover:text-white duration-300"
                     >
                       {data.title}
                     </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
             {/* second col links */}
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3 text-gray-600 dark:text-gray-400 ">
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white duration-200 ">
                 Quick Links
               </h1>
               <ul className="space-y-3">
@@ -69,7 +69,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={data.link}
-                      className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300"
+                      className="text-black dark:text-white hover:dark:text-gray-400 hover:text-white duration-300"
                     >
                       {data.title}
                     </a>
@@ -79,14 +79,14 @@ const Footer = () => {
             </div>
 
             {/* Company Address */}
-            <div className="py-8 px-4 col-span-2 sm:col-auto text-gray-600 dark:text-gray-400">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Address</h1>
+            <div className="py-8 px-4 col-span-2 sm:col-auto text-black dark:text-white">
+              <h1 className="text-xl font-bold sm:text-left mb-3 duration-200">Address</h1>
               <div>
-                <div className="flex items-center gap-3 hover:dark:text-white hover:text-black duration-300">
+                <div className="flex items-center gap-3 hover:dark:text-gray-400 hover:text-white duration-300">
                   <FaLocationArrow />
                   <p>Bandung, Indonesia</p>
                 </div>
-                <div className="flex items-center gap-3 mt-6 hover:dark:text-white hover:text-black duration-300">
+                <div className="flex items-center gap-3 mt-6 hover:dark:text-gray-400 hover:text-white duration-300">
                   <FaMobileAlt />
                   <p>+phone</p>
                 </div>
@@ -94,7 +94,7 @@ const Footer = () => {
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
                   <a href="#">
-                    <FaInstagram className="text-3xl hover:text-primary duration-300" />
+                    <FaInstagram className="text-3xl hover:text-primary duration-200" />
                   </a>
                   <a href="#">
                     <FaFacebook className="text-3xl hover:text-primary duration-200" />

@@ -42,7 +42,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   <li key={index}>
                     <NavLink
                       to={data.link}
-                      className="inline-block px-4 font-semibold text-black hover:text-gray-500 dark:text-gray-400 dark:hover:text-white duration-200"
+                      className="inline-block px-4 font-semibold text-black hover:text-gray-500 dark:text-white dark:hover:text-black duration-200"
                     >
                       {data.name}
                     </NavLink>
@@ -53,7 +53,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 <li className="relative cursor-pointer group">
                   <NavLink
                     to="#"
-                    className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-400 dark:hover:text-white py-2 duration-200"
+                    className="flex items-center gap-[2px] font-semibold text-black dark:text-white dark:hover:text-black py-2 duration-200"
                   >
                     Quick Links
                     <span>
@@ -67,7 +67,7 @@ const Navbar = ({ handleOrderPopup }) => {
                       {DropdownLinks.map((data, index) => (
                         <li key={index}>
                           <NavLink
-                            className="text-black hover:text-white dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
+                            className="text-black hover:text-white dark:hover:text-black duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
                             to={data.link}
                           >
                             {data.name}
@@ -92,12 +92,12 @@ const Navbar = ({ handleOrderPopup }) => {
                 className="search-bar bg-transparent dark:bg-transparent placeholder:text-black 
                 dark:placeholder:text-gray-400"
               />
-              <IoMdSearch className="text-xl   text-black group-hover:text-primary dark:text-gray-400 
+              <IoMdSearch className="text-xl   text-black group-hover:text-primary dark:text-white 
               absolute top-1/2 -translate-y-1/2 right-3 duration-200 cursor-pointer" />
             </div>
 
             <button className="relative p-3" onClick={handleOrderPopup}>
-              <FaCartShopping className="text-xl text-black dark:text-gray-400 duration-200" />
+              <FaCartShopping className="text-xl text-black dark:text-white duration-200" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
               items-center justify-center text-xs">
                 1
@@ -112,7 +112,7 @@ const Navbar = ({ handleOrderPopup }) => {
           {/* Mobile View */}
           <div className="flex lg:hidden items-center gap-4">
             <button className="relative p-3" onClick={handleOrderPopup}>
-              <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+              <FaCartShopping className="text-xl text-black dark:text-white" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
                 1
               </div>
@@ -120,7 +120,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 dark:text-gray-400 duration-200"
+              className="text-black dark:text-white duration-200"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 12h18M3 6h18M3 18h18"></path>
@@ -141,7 +141,7 @@ const Navbar = ({ handleOrderPopup }) => {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <button onClick={() => setIsMenuOpen(false)} className="self-end text-black dark:text-gray-400">
+          <button onClick={() => setIsMenuOpen(false)} className="self-end text-black dark:text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -155,13 +155,13 @@ const Navbar = ({ handleOrderPopup }) => {
               onChange={handleSearchChange}
               className="w-full p-2 pl-10 rounded-lg text-white placeholder:text-gray-400 bg-transparent border-2 border-gray-300 dark:border-gray-700 focus:outline-none"
             />
-            <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-400 dark:text-gray-400" />
+            <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-400 dark:text-white" />
           </div>
 
           <ul className="flex flex-col items-start gap-4">
             {MenuLinks.map((data) => (
               <li key={data.id} className="w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3">
-                <NavLink to={data.link} className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white">
+                <NavLink to={data.link} className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-black">
                   {data.name}
                 </NavLink>
               </li>

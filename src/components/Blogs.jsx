@@ -47,7 +47,7 @@ const Blogs = () => {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.title}
-              className=" shadow-lg rounded-lg "
+              className=" shadow-lg rounded-lg backdrop-blur-sm"
             >
               {/* image section */}
               <div className="overflow-hidden rounded-2xl mb-2">
@@ -59,9 +59,9 @@ const Blogs = () => {
               </div>
               {/* content section */}
               <div className="space-y-2 p-2">
-                <p className="text-xs text-gray-500 dark:text-gray-300">{data.published}</p>
-                <p className="font-bold line-clamp-1">{data.title}</p>
-                <p className="line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-xs text-black dark:text-white duration-200">{data.published}</p>
+                <p className="font-bold line-clamp-1 duration-100">{data.title}</p>
+                <p className="line-clamp-2 text-sm text-black dark:text-white duration-200 italic">
                   {data.subtitle}
                 </p>
               </div>

@@ -75,7 +75,7 @@ const Hero = ({ handleOrderPopup }) => {
                       data-aos="zoom-out"
                       data-aos-duration="500"
                       data-aos-once="true"
-                      className="text-4xl lg:text-5xl uppercase text-white dark:text-black/40 sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold"
+                      className="text-4xl lg:text-5xl uppercase text-white/50 dark:text-black/50 sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold"
                     >
                       {data.title2}
                     </h1>

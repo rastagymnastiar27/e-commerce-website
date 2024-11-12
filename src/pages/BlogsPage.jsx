@@ -22,7 +22,7 @@ const shopPage = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
+    <div className="dark:text-white duration-200 overflow-hidden">
       <Blogs />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>

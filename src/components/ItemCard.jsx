@@ -10,7 +10,7 @@ const ItemCard = ({ item }) => {
         <div
           data-aos="fade-up"
           data-aos-delay={item.aosDelay}
-          className="group shadow-[0_0_10px_1px_rgba(0,0,0,0.3)] rounded-lg bg-transparent transition-shadow duration-100"
+          className="group shadow-[0_0_10px_1px_rgba(0,0,0,0.3)] backdrop-blur-sm rounded-lg bg-transparent transition-shadow duration-100"
           key={item.id}
         >
           <div className="relative overflow-hidden">
