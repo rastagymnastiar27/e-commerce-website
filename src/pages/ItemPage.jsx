@@ -41,45 +41,47 @@ const ItemPage = () => {
   }
 
   return (
-    <div className=" dark:text-white duration-200 overflow-hidden min-h-screen">
-      <section>
-        <div className="container mx-auto py-4 w-full">
+    <div className="dark:text-white duration-200 overflow-hidden min-h-screen">
+      <section className="container mx-auto py-4 w-auto">
+        <div className="w-48 justify-center items-center">
           <NavLink
             to="/shop"
-            className="text-black dark:text-white hover:text-primary dark:hover:text-primary flex items-center pb-4"
+            className="text-black dark:text-white hover:text-primary dark:hover:text-primary flex items-center"
           >
             <FaArrowLeft className="mr-2" /> Back to catalog page
           </NavLink>
         </div>
+      </section>
+      <section>
         <div className="flex flex-col items-center">
           <img
             src={`/assets/product/${itemDetails.imgName}`}
             alt={itemDetails.title}
-            className="lg:w-[300px] h-[200px] object-cover rounded-lg"
+            className="w-[350px] h-[250px] object-cover rounded-lg"
           />
         </div>
-      </section>
-      <section>
         <div className="flex w-60 mx-auto my-auto flex-col pb-10 justify-center items-start">
           <h1 className="text-lg lg:text-2xl font-semibold mt-4">
             {itemDetails.title}
           </h1>
           <p className="mt-2 text-md">${itemDetails.price}</p>
-          <p className="mt-4 text-sm text-gray-600 italic text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="mt-4 text-sm text-black dark:text-white italic text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
             {itemDetails.description}
           </p>
           {/* Add to Cart and Buy Now buttons */}
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-4 mt-6 w-full">
             <button
               onClick={handleAddToCart}
-              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 duration-200"
+              className="px-4 py-2 bg-white/10 text-black border-2 border-black rounded-lg hover:bg-black 
+              hover:text-[#b1a7a2] backdrop-blur-sm duration-200"
             >
               Add to Cart
             </button>
             <button
               onClick={handleBuyNow}
-              className="px-4 py-2 bg-brandGreen text-white rounded-lg hover:bg-brandGreen/80 duration-200"
+              className="px-4 py-2 bg-black text-[#b1a7a2] border-2 border-black rounded-lg hover:bg-white/10 hover:text-black backdrop-blur-sm duration-200"
             >
               Buy Now
             </button>

@@ -17,7 +17,7 @@
   }
 
   .bg-dark-theme {
-    @apply bg-[url('/assets/background/mobile-dark-bg.png')] bg-fixed bg-center bg-contain;
+    @apply bg-[url('/assets/background/mobile-dark-bg.png')] bg-fixed bg-contain;
   }
 
   /* lg breakpoints bg */
