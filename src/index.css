@@ -11,7 +11,6 @@
 }
 
 @layer utilities {
-  /* Default mobile background: bg-cover and clip */
   .bg-light-theme {
     @apply bg-[url('/assets/background/mobile-light-bg.png')] bg-fixed bg-contain;
   }
@@ -20,7 +19,6 @@
     @apply bg-[url('/assets/background/mobile-dark-bg.png')] bg-fixed bg-contain;
   }
 
-  /* lg breakpoints bg */
   @media (min-width: 1024px) {
     .bg-light-theme {
       @apply bg-[url('/assets/background/light-bg.png')] bg-fixed bg-cover;

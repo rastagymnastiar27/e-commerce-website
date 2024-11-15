@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <div className="">
       <div className="container font-mono">
-        <div className="grid md:grid-cols-3 pb-20">
+        <div className="grid md:grid-cols-3 py-5">
           {/* company details */}
           <div className="py-8 px-4">
             <a

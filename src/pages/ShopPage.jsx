@@ -23,7 +23,7 @@ const shopPage = () => {
   }, []);
 
   return (
-    <div className="dark:text-white duration-200 overflow-hidden pt-4 pb-10">
+    <div className="dark:text-white duration-200 overflow-hidden lg:my-12">
       <Items category={category} setCategory={setCategory} /> {/* Pass category and setCategory */}
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>

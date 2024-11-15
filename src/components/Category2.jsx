@@ -36,10 +36,10 @@ const Category = () => {
             />
           </div>
           {/* Second col */}
-          <div className="py-10 pl-5 bg-gradient-to-br from-brandGreen to-brandGreen/90 text-white rounded-3xl relative h-[320px] flex items-end">
+          <div className="py-10 pl-5 bg-gradient-to-br from-black/90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end">
             <div>
               <div className="mb-4">
-                <p className="mb-[2px] text-white">Fashion</p>
+                <p className="mb-[2px] text-gray-400">Fashion</p>
                 <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
                   Outerwear
@@ -49,7 +49,7 @@ const Category = () => {
                   <Button
                     text="Browse"
                     bgColor={"bg-white"}
-                    textColor={"text-brandGreen"}
+                    textColor={"text-black"}
                   />
                 </Link>
               </div>
@@ -61,7 +61,7 @@ const Category = () => {
             />
           </div>
           {/* Third col */}
-          <div className="py-10 pl-5 bg-gradient-to-br from-brandBlue to-brandBlue/90 text-white rounded-3xl relative h-[320px] flex items-end">
+          <div className="py-10 pl-5 bg-gradient-to-br from-gray-400/90 to-gray-100 text-white rounded-3xl relative h-[320px] flex items-end">
             <div>
               <div className="mb-4">
                 <p className="mb-[2px] text-white">Fashion</p>
@@ -73,8 +73,8 @@ const Category = () => {
                 to={`/item`}>
                   <Button
                     text="Browse"
-                    bgColor={"bg-white"}
-                    textColor={"text-brandBlue"}
+                    bgColor={"bg-black"}
+                    textColor={"text-white"}
                   />
                 </Link>
               </div>
