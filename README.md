@@ -47,14 +47,10 @@ I will develop this project in the future with new features, stay tuned!
 
 ## **Website Preview**
 
-_Home Page Desktop_
-
-![culture-full-home](https://github.com/user-attachments/assets/2f562be7-de93-4633-b80d-ef4fee72a6a5)
+_Home Page Desktop
+_![desktop_home(1)](https://github.com/user-attachments/assets/5a27f67d-2964-44f0-8cac-679bc0908648)
 
 
 
 _Home Page Mobile_
-
-![mobile-culture-view](https://github.com/user-attachments/assets/92ea9886-deb3-462a-b986-29f2b47d8771)
-
-
+![screencapture-localhost-3000-2024-11-18-18_02_31(1)](https://github.com/user-attachments/assets/e3d41374-6bd9-4d4a-baff-2d1f731246b9)
