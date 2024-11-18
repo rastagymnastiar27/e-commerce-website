@@ -49,6 +49,9 @@ I will develop this project in the future with new features, stay tuned!
 
 _Home Page Desktop
 _![desktop_home(1)](https://github.com/user-attachments/assets/5a27f67d-2964-44f0-8cac-679bc0908648)
+<img width="1703" alt="Screenshot 2024-11-18 at 17 46 03" src="https://github.com/user-attachments/assets/336f3295-5a1a-4e08-8b8a-2d49554e3017">
+<img width="1703" alt="Screenshot 2024-11-18 at 17 45 26" src="https://github.com/user-attachments/assets/1bd90293-d3b9-4cdc-af99-7a486bd0223c">
+<img width="1703" alt="Screenshot 2024-11-18 at 17 45 09" src="https://github.com/user-attachments/assets/eef61174-56c6-4205-98b2-ac1bcdeacfab">
 
 
 
