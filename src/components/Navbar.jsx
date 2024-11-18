@@ -42,7 +42,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   <li key={index}>
                     <NavLink
                       to={data.link}
-                      className="inline-block px-4 font-semibold text-black hover:text-gray-500 dark:text-white dark:hover:text-black duration-200"
+                      className="inline-block px-4 font-semibold text-black hover:text-white dark:text-white dark:hover:text-black duration-200"
                     >
                       {data.name}
                     </NavLink>

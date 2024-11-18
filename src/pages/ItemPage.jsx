@@ -51,7 +51,7 @@ const ItemPage = () => {
           </NavLink>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row lg:w-3/4 lg:mx-auto lg:my-16 lg:gap-8 justify-center items-center p-4 rounded-lg">
+      <section className="flex flex-col lg:flex-row lg:w-3/4 lg:mx-auto lg:my-6 lg:gap-8 justify-center items-center p-4 rounded-lg">
         {/* Image Container */}
         <div className="flex flex-col items-center justify-center p-4 rounded-lg">
           <img

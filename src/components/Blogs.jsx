@@ -44,7 +44,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="my-16">
+    <div className="sm:my-6 lg:my-16">
       <div className="container">
         {/* Header section */}
         <Heading title="Recent News" subtitle={"Explore Our Blogs"}/>
