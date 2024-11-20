@@ -98,7 +98,7 @@ const Navbar = ({ cartItems }) => {
               />
             </div>
 
-            <button className="relative p-3">
+            <NavLink to="/cart" className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white duration-200" />
               <div
                 className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
@@ -106,7 +106,7 @@ const Navbar = ({ cartItems }) => {
               >
                 {cartItems}
               </div>
-            </button>
+            </NavLink>
 
             <div>
               <DarkMode />
@@ -115,12 +115,12 @@ const Navbar = ({ cartItems }) => {
 
           {/* Mobile View */}
           <div className="flex lg:hidden items-center gap-4">
-            <button className="relative p-3">
+            <NavLink to="/cart" className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
                 {cartItems}
               </div>
-            </button>
+            </NavLink>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
