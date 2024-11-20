@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useParams, NavLink } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa";
-import Spinner from "../components/Spinner";
-import itemsData from "../items.json"; // Adjust the path accordingly
+import React, { useEffect, useState } from 'react';
+import { useParams, NavLink } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
+import Spinner from '../components/Spinner';
+import itemsData from '../items.json'; // Adjust the path accordingly
 
-const ItemPage = () => {
+const ItemPage = ({ onAddToCart }) => {
   const { id } = useParams(); // Get the item ID from the URL
   const [itemDetails, setItemDetails] = useState(null);
   const [loading, setLoading] = useState(true); // Spinner state
@@ -26,6 +26,7 @@ const ItemPage = () => {
   }, [id]);
 
   const handleAddToCart = () => {
+    onAddToCart(); // Call the function to update the cart item count
     alert(`${itemDetails.title} has been added to your cart.`);
   };
 
@@ -37,7 +38,6 @@ const ItemPage = () => {
   if (loading) {
     return <Spinner loading={loading} />;
   }
-
 
   return (
     <div className="dark:text-white duration-200 overflow-hidden">
@@ -63,13 +63,11 @@ const ItemPage = () => {
 
         {/* Details Container */}
         <div className="flex flex-col w-full lg:w-1/4 justify-center p-4 rounded-lg">
-          <h1 className="text-lg lg:text-2xl font-semibold mt-4">
-            {itemDetails.title}
-          </h1>
+          <h1 className="text-lg lg:text-2xl font-semibold mt-4">{itemDetails.title}</h1>
           <p className="mt-2 text-md">${itemDetails.price}</p>
           <p className="mt-4 text-sm text-black dark:text-white italic text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </p>
 
           {/* Buttons */}

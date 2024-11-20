@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import { IoMdSearch } from "react-icons/io";
-import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
-import DarkMode from "./DarkMode";
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import { IoMdSearch } from 'react-icons/io';
+import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
+import DarkMode from './DarkMode';
+import { NavLink } from 'react-router-dom';
 
 const MenuLinks = [
-  { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "Shop", link: "/shop" },
-  { id: 3, name: "Blogs", link: "/blogs" },
+  { id: 1, name: 'Home', link: '/' },
+  { id: 2, name: 'Shop', link: '/shop' },
+  { id: 3, name: 'Blogs', link: '/blogs' },
 ];
 
 const DropdownLinks = [
-  { id: 1, name: "Trending Products", link: "/#" },
-  { id: 2, name: "Best Selling", link: "/#" },
-  { id: 3, name: "Top Rated", link: "/#" },
+  { id: 1, name: 'Trending Products', link: '/#' },
+  { id: 2, name: 'Best Selling', link: '/#' },
+  { id: 3, name: 'Top Rated', link: '/#' },
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = ({ cartItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Track menu toggle state
-  const [searchQuery, setSearchQuery] = useState(""); // Search query state
+  const [searchQuery, setSearchQuery] = useState(''); // Search query state
 
   const handleSearchChange = (e) => setSearchQuery(e.target.value); // Handle search input change
 
@@ -92,15 +92,19 @@ const Navbar = ({ handleOrderPopup }) => {
                 className="search-bar bg-transparent dark:bg-transparent placeholder:text-black 
                 dark:placeholder:text-gray-400"
               />
-              <IoMdSearch className="text-xl   text-black group-hover:text-primary dark:text-white 
-              absolute top-1/2 -translate-y-1/2 right-3 duration-200 cursor-pointer" />
+              <IoMdSearch
+                className="text-xl   text-black group-hover:text-primary dark:text-white 
+              absolute top-1/2 -translate-y-1/2 right-3 duration-200 cursor-pointer"
+              />
             </div>
 
-            <button className="relative p-3" onClick={handleOrderPopup}>
+            <button className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white duration-200" />
-              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
-              items-center justify-center text-xs">
-                1
+              <div
+                className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
+              items-center justify-center text-xs"
+              >
+                {cartItems}
               </div>
             </button>
 
@@ -111,10 +115,10 @@ const Navbar = ({ handleOrderPopup }) => {
 
           {/* Mobile View */}
           <div className="flex lg:hidden items-center gap-4">
-            <button className="relative p-3" onClick={handleOrderPopup}>
+            <button className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                1
+                {cartItems}
               </div>
             </button>
 
@@ -122,7 +126,16 @@ const Navbar = ({ handleOrderPopup }) => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-black dark:text-white duration-200"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M3 12h18M3 6h18M3 18h18"></path>
               </svg>
             </button>
@@ -133,16 +146,28 @@ const Navbar = ({ handleOrderPopup }) => {
       {/* Full-page menu for small screens */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden transition-opacity duration-200 h-full ${
-          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
       >
         <div
           className={`bg-black/10 backdrop-blur-md w-[75%] h-full p-6 absolute right-0 top-0 flex flex-col gap-6 transition-transform duration-200 ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
+            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <button onClick={() => setIsMenuOpen(false)} className="self-end text-black dark:text-white">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="self-end text-black dark:text-white"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
@@ -160,8 +185,14 @@ const Navbar = ({ handleOrderPopup }) => {
 
           <ul className="flex flex-col items-start gap-4">
             {MenuLinks.map((data) => (
-              <li key={data.id} className="w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3">
-                <NavLink to={data.link} className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-black">
+              <li
+                key={data.id}
+                className="w-full border-b-2 border-gray-300 dark:border-gray-700 pb-3"
+              >
+                <NavLink
+                  to={data.link}
+                  className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-black"
+                >
                   {data.name}
                 </NavLink>
               </li>

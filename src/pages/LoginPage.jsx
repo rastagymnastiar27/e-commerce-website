@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center min-h-screen">
       <div className="flex flex-col bg-black/40 justify-center items-center shadow-[0_0_10px_1px_rgba(0,0,0,0.3)] rounded-lg transition-shadow duration-100 py-10 max-w-xs lg:max-w-md w-full">
         <h1 className="text-3xl lg:text-4xl font-bold mb-6 font-mono text-primary uppercase">
           Culture
