@@ -26,15 +26,15 @@ The website uses a JSON API to handle and manage job data. [JSON file](https://g
 Follow these steps to run the project on your local machine:
 
 1. **Open the project in your code editor** (e.g., VS Code).
-2. **Open the terminal** and start the JSON server:
-   
-   ````bash
-   npm run server
-   
-3. **Install the necessary packages:**
+2. **Install the necessary packages:**
    
     ````bash
     npm install
+   
+3. **Open the terminal** and start the JSON server:
+   
+   ````bash
+   npm run server
 
 4. **Run the project:**
 
