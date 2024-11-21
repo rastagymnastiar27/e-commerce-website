@@ -17,10 +17,10 @@ const DropdownLinks = [
 ];
 
 const Navbar = ({ cartItems }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Track menu toggle state
-  const [searchQuery, setSearchQuery] = useState(''); // Search query state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearchChange = (e) => setSearchQuery(e.target.value); // Handle search input change
+  const handleSearchChange = (e) => setSearchQuery(e.target.value); 
 
   return (
     <div className=" dark:text-white duration-200 relative z-40 font-mono">

@@ -2,24 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
-import itemsData from '../items.json'; // Adjust the path accordingly
+import itemsData from '../items.json'; 
 
 const ItemPage = ({ onAddToCart }) => {
-  const { id } = useParams(); // Get the item ID from the URL
+  const { id } = useParams(); 
   const [itemDetails, setItemDetails] = useState(null);
-  const [loading, setLoading] = useState(true); // Spinner state
+  const [loading, setLoading] = useState(true);
 
   // Simulate fetching data based on the item ID
   useEffect(() => {
     const fetchItem = async () => {
-      setLoading(true); // Start loading
-      const allItems = [...itemsData.footwear, ...itemsData.Outerwear]; // Merge categories
+      setLoading(true); 
+      const allItems = [...itemsData.footwear, ...itemsData.Outerwear];
       const selectedItem = allItems.find((item) => item.id === parseInt(id));
 
       setTimeout(() => {
         setItemDetails(selectedItem || null);
-        setLoading(false); // Stop loading after fetching
-      }); // Simulated delay
+        setLoading(false);
+      });
     };
 
     fetchItem();
@@ -34,7 +34,6 @@ const ItemPage = ({ onAddToCart }) => {
     alert(`Proceeding to checkout for ${itemDetails.title}.`);
   };
 
-  // Show spinner while loading
   if (loading) {
     return <Spinner loading={loading} />;
   }
