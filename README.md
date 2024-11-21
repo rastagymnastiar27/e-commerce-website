@@ -1,4 +1,4 @@
-# Culture e-commerce (still on development)
+# Culture e-commerce (on development)
 This is a Responsive Website built using React.js, Tailwind CSS, and Vite. The Culture e-commerce provides essential features for shopping, for now it only can display items on homepage and changing theme.
 (The full functional Website (all features and backend) will be available 1-2 weeks from this readme file latest date, stay tuned!
 
@@ -22,7 +22,7 @@ demo: https://culture-ecommerce.netlify.app/
 ## **Data Source**
 The website uses a JSON API to handle and manage job data. [JSON file](https://github.com/rastagymnastiar27/e-commerce-website/blob/main/src/products.json)
 
-## **TO-D0 for Demo**
+## **TO-D0 for run the project locally**
 Follow these steps to run the project on your local machine:
 
 1. **Open the project in your code editor** (e.g., VS Code).
