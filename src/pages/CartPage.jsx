@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatCurrency } from '../utils/formatCurrency'; // Pastikan path import sesuai dengan struktur foldermu
+import { formatCurrency } from '../utils/formatCurrency'; 
 
 const CartPage = ({ cartItems = [] }) => {
   const calculateTotal = () => {

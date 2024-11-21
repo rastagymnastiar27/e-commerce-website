@@ -26,7 +26,7 @@ const ItemPage = ({ onAddToCart }) => {
   }, [id]);
 
   const handleAddToCart = () => {
-    onAddToCart(); // Call the function to update the cart item count
+    onAddToCart(itemDetails);
     alert(`${itemDetails.title} has been added to your cart.`);
   };
 
