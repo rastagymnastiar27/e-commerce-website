@@ -3,6 +3,7 @@ import { useParams, NavLink } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
 import itemsData from '../items.json'; 
+import { toast } from 'react-toastify';
 
 const ItemPage = ({ onAddToCart }) => {
   const { id } = useParams(); 
@@ -27,11 +28,11 @@ const ItemPage = ({ onAddToCart }) => {
 
   const handleAddToCart = () => {
     onAddToCart(itemDetails);
-    alert(`${itemDetails.title} has been added to your cart.`);
+    toast.success(`${itemDetails.title} has been added to your cart.`);
   };
 
   const handleBuyNow = () => {
-    alert(`Proceeding to checkout for ${itemDetails.title}.`);
+    toast.success(`Proceeding to checkout for ${itemDetails.title}.`);
   };
 
   if (loading) {
