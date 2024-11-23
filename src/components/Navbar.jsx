@@ -20,13 +20,13 @@ const DropdownLinks = [
 const Navbar = ({ cartItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const { getTotalItems } = useCart(); // Ambil fungsi dari CartContext
-  const totalItems = getTotalItems(); // Hitung jumlah total item di keranjang
+  const { getTotalItems } = useCart();
+  const totalItems = getTotalItems();
 
   const handleSearchChange = (e) => setSearchQuery(e.target.value); 
 
   return (
-    <div className=" dark:text-white duration-200 relative z-40 font-mono">
+    <div className="dark:text-white duration-200 z-40 font-mono">
       <div className="py-4">
         <div className="container flex justify-between items-center">
           {/* Logo and Links section */}

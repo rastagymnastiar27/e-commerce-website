@@ -20,7 +20,7 @@ const Category = () => {
                   Graphic T-Shirts
                 </p>
                 <Link
-                to={`/item`}>
+                to={`/shop?category=t-tops`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-primary"}
@@ -42,10 +42,10 @@ const Category = () => {
                 <p className="mb-[2px] text-gray-400">Fashion</p>
                 <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
-                  Outerwear
+                  Jackets
                 </p>
                 <Link
-                to={`/item`}>
+                to={`/shop?category=outerwears`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-white"}
@@ -70,7 +70,7 @@ const Category = () => {
                   Shoes
                 </p>
                 <Link
-                to={`/item`}>
+                to={`/shop?category=footwear`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-black"}

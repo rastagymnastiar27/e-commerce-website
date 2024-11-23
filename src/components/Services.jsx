@@ -37,7 +37,8 @@ const Services = () => {
   return (
     <div className="flex justify-center">
       <div className="container my-8 md:my-20 lg:mb-10">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 
+        justify-items-center">
           {ServiceData.map((data) => (
             <div key={data.id} className="flex flex-col items-center gap-4">
               {data.icon}
@@ -45,7 +46,8 @@ const Services = () => {
                 <h1 className="flex flex-col items-center gap-4 lg:text-xl font-bold">
                   {data.title}
                 </h1>
-                <h1 className="flex flex-col items-center gap-4 text-black dark:text-white text-xs lg:text-sm">
+                <h1 className="flex flex-col items-center gap-4 text-black dark:text-white 
+                text-xs lg:text-sm">
                   {data.description}
                 </h1>
               </div>

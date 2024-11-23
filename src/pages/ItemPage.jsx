@@ -15,7 +15,14 @@ const ItemPage = () => {
   useEffect(() => {
     const fetchItem = async () => {
       setLoading(true);
-      const allItems = [...itemsData.footwear, ...itemsData.Outerwear];
+      const allItems = [
+        ...itemsData.footwear,
+        ...itemsData.Outerwear,
+        ...itemsData.tops,
+        ...itemsData.accessories,
+        ...itemsData.shorts,
+        ...itemsData.pants,
+      ];
       const selectedItem = allItems.find((item) => item.id === parseInt(id));
 
       setTimeout(() => {
@@ -40,7 +47,7 @@ const ItemPage = () => {
 
   if (loading) {
     return <Spinner loading={loading} />;
-  };
+  }
 
   return (
     <div className="dark:text-white duration-200 overflow-hidden">
@@ -48,19 +55,24 @@ const ItemPage = () => {
         <div className="w-48 justify-center items-center">
           <NavLink
             to="/shop"
-            className="text-black dark:text-white hover:text-primary dark:hover:text-primary flex items-center"
+            className="text-black dark:text-white hover:text-primary dark:hover:text-primary 
+            flex items-center"
           >
             <FaArrowLeft className="mr-2" /> Back to catalog page
           </NavLink>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row lg:w-3/4 lg:mx-auto lg:my-6 lg:gap-8 justify-center items-center p-4 rounded-lg">
+      <section
+        className="flex flex-col lg:flex-row lg:w-3/4 lg:mx-auto lg:my-6 lg:gap-8 justify-center 
+      items-center p-4 rounded-lg"
+      >
         {/* Image Container */}
         <div className="flex flex-col items-center justify-center p-4 rounded-lg">
           <img
             src={`/assets/product/${itemDetails.imgName}`}
             alt={itemDetails.title}
-            className="w-[300px] h-[200px] lg:w-[450px] lg:h-[450px] object-cover rounded-lg image-reflection"
+            className="w-[300px] h-[200px] lg:w-[450px] lg:h-[450px] object-cover rounded-lg 
+            image-reflection"
           />
         </div>
 
@@ -77,13 +89,15 @@ const ItemPage = () => {
           <div className="flex gap-4 mt-6 w-full lg:w-auto justify-center">
             <button
               onClick={handleAddToCart}
-              className="w-full lg:w-32 px-4 py-2 bg-white/10 text-black border-black rounded-lg hover:bg-black hover:text-[#b1a7a2] backdrop-blur-sm duration-200"
+              className="w-full lg:w-32 px-4 py-2 bg-white/10 text-black border-black 
+              rounded-lg hover:bg-black hover:text-[#b1a7a2] backdrop-blur-sm duration-200"
             >
               Add to Cart
             </button>
             <button
               onClick={handleBuyNow}
-              className="w-full lg:w-32 px-4 py-2 bg-black text-[#b1a7a2] border-black rounded-lg hover:bg-white/10 hover:text-black backdrop-blur-sm duration-200"
+              className="w-full lg:w-32 px-4 py-2 bg-black text-[#b1a7a2] border-black 
+              rounded-lg hover:bg-white/10 hover:text-black backdrop-blur-sm duration-200"
             >
               Buy Now
             </button>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image1 from "../assets/category/belts.png";
-import Image2 from "../assets/category/ring.png";
+import Image2 from "../assets/category/shorts-1.png";
 import Image3 from "../assets/category/jeans.png";
 import Button from "../components/Button.jsx";
 import { Link } from 'react-router-dom';
@@ -21,7 +21,7 @@ const Category = () => {
                   Belts
                 </p>
                 <Link
-                to={`/item`}
+                to={`/shop?category=accessories`}
                 >
                   <Button
                     text="Browse"
@@ -41,10 +41,10 @@ const Category = () => {
                 <p className="mb-[2px] text-black">Fashion</p>
                 <p className="text-2xl text-black font-semibold mb-[2px]">With</p>
                 <p className="text-4xl text-black xl:text-5xl font-bold opacity-40 mb-2">
-                  Rings
+                  Jorts
                 </p>
                 <Link
-                to={`/item`}>
+                to={`/shop?category=shorts`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-black"}
@@ -70,7 +70,7 @@ const Category = () => {
                   Baggy Jeans
                 </p>
                 <Link
-                to={`/item`}>
+                to={`/shop?category=pants`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-primary"}

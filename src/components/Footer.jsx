@@ -24,7 +24,8 @@ const Footer = () => {
           <div className="py-8 px-4">
             <a
               href="#"
-              className="text-primary font-mono font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
+              className="text-primary font-mono font-semibold tracking-widest text-2xl 
+              uppercase sm:text-3xl"
             >
               Culture
             </a>
@@ -34,7 +35,8 @@ const Footer = () => {
             </p>
             <a
               href="https://github.com/rastagymnastiar27"
-              className="inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full"
+              className="inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm 
+              rounded-full"
             >
               Visit my Github Page
             </a>
@@ -43,7 +45,8 @@ const Footer = () => {
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white duration-200">
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white 
+              duration-200">
                 Important Links
               </h1>
               <ul className="space-y-3">
@@ -51,7 +54,8 @@ const Footer = () => {
                   <li key={index}>
                     <Link
                       to={data.link}
-                      className="text-black dark:text-white hover:dark:text-gray-400 hover:text-white duration-300"
+                      className="text-black dark:text-white hover:dark:text-gray-400 
+                      hover:text-white duration-300"
                     >
                       {data.title}
                     </Link>
@@ -61,7 +65,8 @@ const Footer = () => {
             </div>
             {/* second col links */}
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white duration-200 ">
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black dark:text-white 
+              duration-200 ">
                 Quick Links
               </h1>
               <ul className="space-y-3">
@@ -69,7 +74,8 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={data.link}
-                      className="text-black dark:text-white hover:dark:text-gray-400 hover:text-white duration-300"
+                      className="text-black dark:text-white hover:dark:text-gray-400 
+                      hover:text-white duration-300"
                     >
                       {data.title}
                     </a>
@@ -82,11 +88,13 @@ const Footer = () => {
             <div className="py-8 px-4 col-span-2 sm:col-auto text-black dark:text-white">
               <h1 className="text-xl font-bold sm:text-left mb-3 duration-200">Address</h1>
               <div>
-                <div className="flex items-center gap-3 hover:dark:text-gray-400 hover:text-white duration-300">
+                <div className="flex items-center gap-3 hover:dark:text-gray-400 hover:text-white 
+                duration-300">
                   <FaLocationArrow />
                   <p>Bandung, Indonesia</p>
                 </div>
-                <div className="flex items-center gap-3 mt-6 hover:dark:text-gray-400 hover:text-white duration-300">
+                <div className="flex items-center gap-3 mt-6 hover:dark:text-gray-400 hover:text-white 
+                duration-300">
                   <FaMobileAlt />
                   <p>+phone</p>
                 </div>

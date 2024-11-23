@@ -45,7 +45,8 @@ const Hero = ({ handleOrderPopup }) => {
   return (
     <div className="container">
       <div
-        className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center"
+        className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color 
+        flex justify-center items-center"
         >
         <div className="container pb-8 sm:pb-0 ">
           {/* Hero section */}
@@ -54,7 +55,8 @@ const Hero = ({ handleOrderPopup }) => {
               <div key={data.id}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 ">
                   {/* text content section */}
-                  <div className="flex flex-col justify-center gap-4  sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10 ">
+                  <div className="flex flex-col justify-center gap-4  sm:pl-3 pt-12 sm:pt-0 
+                  text-center sm:text-left order-2 sm:order-1 relative z-10 ">
                     <h1
                       data-aos="zoom-out"
                       data-aos-duration="500"
@@ -75,7 +77,8 @@ const Hero = ({ handleOrderPopup }) => {
                       data-aos="zoom-out"
                       data-aos-duration="500"
                       data-aos-once="true"
-                      className="text-4xl lg:text-5xl uppercase text-white/50 dark:text-black/50 sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold"
+                      className="text-4xl lg:text-5xl uppercase text-white/50 dark:text-black/50 
+                      sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold"
                     >
                       {data.title2}
                     </h1>
@@ -103,8 +106,9 @@ const Hero = ({ handleOrderPopup }) => {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 lg:translate-x-[40px] lg:scale-140 
-                        object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
+                        className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 
+                        lg:translate-x-[40px] lg:scale-140 object-contain mx-auto 
+                        drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
                       />
                     </div>
                   </div>
