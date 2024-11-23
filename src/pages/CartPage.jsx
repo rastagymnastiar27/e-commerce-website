@@ -46,7 +46,7 @@ const CartPage = () => {
                     <p>{formatCurrency(item.price * item.quantity)}</p>
                     {/* Delete Button */}
                     <button
-                      className="mt-2 text-red-500 hover:text-red-700 flex items-center"
+                      className="mt-2 text-red-300 hover:text-red-700 flex items-center"
                       onClick={() => removeFromCart(item.id)}
                     >
                       <FaTrash className="mr-1 text-xl" />
