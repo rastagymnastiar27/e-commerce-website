@@ -1,9 +1,10 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { formatCurrency } from '../utils/formatCurrency';
+import { FaTrash } from 'react-icons/fa'; // Import icon trash
 
 const CartPage = () => {
-  const { cartItems } = useCart();
+  const { cartItems, removeFromCart } = useCart(); // Tambahkan removeFromCart dari context
 
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -41,8 +42,15 @@ const CartPage = () => {
                       <p>Quantity: {item.quantity}</p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-end">
+                  <div className="flex flex-col items-end mt-1">
                     <p>{formatCurrency(item.price * item.quantity)}</p>
+                    {/* Delete Button */}
+                    <button
+                      className="mt-2 text-red-500 hover:text-red-700 flex items-center"
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      <FaTrash className="mr-1 text-xl" />
+                    </button>
                   </div>
                 </div>
               ))}

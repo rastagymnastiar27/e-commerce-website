@@ -20,11 +20,20 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const removeFromCart = (id) => {
+    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+  };
+
   const getTotalItems = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
-  const value = { cartItems, addToCart, getTotalItems };
+  const value = {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    getTotalItems,
+  };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
