@@ -3,6 +3,7 @@ import { IoMdSearch } from 'react-icons/io';
 import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
 import DarkMode from './DarkMode';
 import { NavLink } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 const MenuLinks = [
   { id: 1, name: 'Home', link: '/' },
@@ -19,6 +20,8 @@ const DropdownLinks = [
 const Navbar = ({ cartItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const { getTotalItems } = useCart(); // Ambil fungsi dari CartContext
+  const totalItems = getTotalItems(); // Hitung jumlah total item di keranjang
 
   const handleSearchChange = (e) => setSearchQuery(e.target.value); 
 
@@ -104,7 +107,7 @@ const Navbar = ({ cartItems }) => {
                 className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex 
               items-center justify-center text-xs"
               >
-                {cartItems}
+                {totalItems}
               </div>
             </NavLink>
 
@@ -118,7 +121,7 @@ const Navbar = ({ cartItems }) => {
             <NavLink to="/cart" className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
-                {cartItems}
+              {totalItems}
               </div>
             </NavLink>
 

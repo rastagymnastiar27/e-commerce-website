@@ -2,18 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
-import itemsData from '../items.json'; 
+import itemsData from '../items.json';
 import { toast } from 'react-toastify';
+import { useCart } from '../context/CartContext';
 
-const ItemPage = ({ onAddToCart }) => {
-  const { id } = useParams(); 
+const ItemPage = () => {
+  const { id } = useParams();
+  const { addToCart } = useCart();
   const [itemDetails, setItemDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Simulate fetching data based on the item ID
   useEffect(() => {
     const fetchItem = async () => {
-      setLoading(true); 
+      setLoading(true);
       const allItems = [...itemsData.footwear, ...itemsData.Outerwear];
       const selectedItem = allItems.find((item) => item.id === parseInt(id));
 
@@ -27,8 +28,10 @@ const ItemPage = ({ onAddToCart }) => {
   }, [id]);
 
   const handleAddToCart = () => {
-    onAddToCart(itemDetails);
-    toast.success(`${itemDetails.title} has been added to your cart.`);
+    if (itemDetails) {
+      addToCart(itemDetails);
+      toast.success(`${itemDetails.title} has been added to your cart.`);
+    }
   };
 
   const handleBuyNow = () => {
@@ -37,7 +40,7 @@ const ItemPage = ({ onAddToCart }) => {
 
   if (loading) {
     return <Spinner loading={loading} />;
-  }
+  };
 
   return (
     <div className="dark:text-white duration-200 overflow-hidden">

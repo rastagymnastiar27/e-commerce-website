@@ -4,9 +4,9 @@ import Popup from "../components/Popup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const shopPage = () => {
+const ShopPage = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
-  const [category, setCategory] = React.useState("all"); // Add category state
+  const [category, setCategory] = React.useState("all");
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
@@ -24,10 +24,11 @@ const shopPage = () => {
 
   return (
     <div className="dark:text-white duration-200 overflow-hidden lg:my-12">
-      <Items category={category} setCategory={setCategory} /> {/* Pass category and setCategory */}
+       {/* Pass category and setCategory */}
+      <Items category={category} setCategory={setCategory} />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
   );
 };
 
-export default shopPage;
+export default ShopPage;
