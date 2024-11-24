@@ -43,15 +43,26 @@ Follow these steps to run the project on your local machine:
 
 ## **Website Preview**
 
-_Home Page Desktop
-_![desktop_home(1)](https://github.com/user-attachments/assets/5a27f67d-2964-44f0-8cac-679bc0908648)
+_Home Page Desktop_
+![desktop-home](https://github.com/user-attachments/assets/ccd20a76-2858-4bef-a8ed-fcd82bb7c4cf)
+
+
+_Shop Page Desktop_
+![desktop-shoppage](https://github.com/user-attachments/assets/0f68f890-e318-4a2c-affc-27336f1e11af)
+
+
+_Item Page Desktop_
+![desktop-itempage](https://github.com/user-attachments/assets/43590236-6572-4118-a14d-fb26077af3eb)
+
+
+_Cart Page Desktop_
+![desktop-cartpage](https://github.com/user-attachments/assets/8b990457-7265-4506-a3b5-3ce3667f0f4c)
+
+
+_Blogs Page Desktop_
 <img width="1703" alt="Screenshot 2024-11-18 at 17 46 03" src="https://github.com/user-attachments/assets/336f3295-5a1a-4e08-8b8a-2d49554e3017">
-<img width="1703" alt="Screenshot 2024-11-18 at 17 45 26" src="https://github.com/user-attachments/assets/1bd90293-d3b9-4cdc-af99-7a486bd0223c">
-<img width="1703" alt="Screenshot 2024-11-18 at 17 45 09" src="https://github.com/user-attachments/assets/eef61174-56c6-4205-98b2-ac1bcdeacfab">
-![image](https://github.com/user-attachments/assets/d96cbd88-6bf0-4e6d-beca-ff510d2a69f5)
-
-
 
 
 _Home Page Mobile_
-![screencapture-localhost-3000-2024-11-18-18_02_31(1)](https://github.com/user-attachments/assets/e3d41374-6bd9-4d4a-baff-2d1f731246b9)
+
+![mobile-home](https://github.com/user-attachments/assets/4d430f3a-5d4f-49dd-b32f-61406cf19772)
