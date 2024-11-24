@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import Heading from '../components/Heading';
 import Spinner from '../components/Spinner';
 import Img1 from '../assets/blogs/blog-1.jpg';
@@ -47,7 +48,11 @@ const Blogs = () => {
     <div className="sm:my-6 lg:my-16">
       <div className="container">
         {/* Header section */}
-        <Heading title="Recent News" subtitle={'Explore Our Blogs'} />
+        <Link
+          to="/blogs"
+        >
+          <Heading title="Recent News" subtitle={'Explore Our Blogs'} />
+        </Link>
 
         {/* Show Spinner or Blog Section */}
         {loading ? (

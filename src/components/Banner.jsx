@@ -46,7 +46,7 @@ const Banner = ({ data }) => {
             </p>
             <div data-aos="fade-up" data-aos-offset="0">
               <Link
-                to={`/item`}
+                to={data.item}
               >
                 <button
                 style={{ color: data.bgColor }}

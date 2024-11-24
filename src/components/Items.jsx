@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaCaretDown } from 'react-icons/fa6';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Heading from '../components/Heading';
 import ItemCard from './ItemCard';
 import Spinner from './Spinner';
@@ -93,7 +93,11 @@ const Items = ({ category, setCategory, showPagination = false }) => {
   return (
     <div className="container py-6">
       {/* Header section */}
-      <Heading title="Our Catalogs" subtitle={'Explore Our Items'} />
+      <Link
+        to="/shop"
+      >
+        <Heading title="Our Catalogs" subtitle={'Explore Our Items'} />
+      </Link>
 
       {/* Category Dropdown (Hidden on Home Page) */}
       {pathname !== '/' && (

@@ -4,6 +4,7 @@ import Image1 from "../assets/hero/docmart.png";
 import Image2 from "../assets/hero/hats.png";
 import Image3 from "../assets/hero/jacket.png";
 import Button from "../components/Button.jsx";
+import {Link} from "react-router-dom"
 
 const HeroData = [
   {
@@ -88,12 +89,16 @@ const Hero = ({ handleOrderPopup }) => {
                       data-aos-duration="500"
                       data-aos-delay="300"
                     >
-                      <Button
-                        text="Shop By Category"
-                        bgColor="bg-primary"
-                        textColor="text-white"
-                        handler={handleOrderPopup}
-                      />
+                      <Link
+                        to="/shop"
+                      >
+                        <Button
+                          text="Shop By Category"
+                          bgColor="bg-primary"
+                          textColor="text-white"
+                          handler={handleOrderPopup}
+                        />
+                      </Link>
                     </div>
                   </div>
                   {/* Img section */}

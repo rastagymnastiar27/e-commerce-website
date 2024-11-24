@@ -1,47 +1,47 @@
-import React from "react";
+import React from 'react';
 
-import Hero from "../components/Hero.jsx";
-import Category from "../components/Category.jsx";
-import Category2 from "../components/Category2.jsx";
-import Services from "../components/Services.jsx";
-import Banner from "../components/Banner.jsx";
+import Hero from '../components/Hero.jsx';
+import Category from '../components/Category.jsx';
+import Category2 from '../components/Category2.jsx';
+import Services from '../components/Services.jsx';
+import Banner from '../components/Banner.jsx';
 
-import docmart from "../assets/hero/2.png";
-import vinyl from "../assets/category/vinyl.png";
+import docmart from '../assets/hero/2.png';
+import vinyl from '../assets/category/vinyl.png';
 
-import Items from "../components/Items.jsx";
-import Blogs from "../components/Blogs.jsx";
-import Popup from "../components/Popup.jsx";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Items from '../components/Items.jsx';
+import Blogs from '../components/Blogs.jsx';
+import Popup from '../components/Popup.jsx';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BannerData = {
-  discount: "30% OFF",
-  title: "Fine kick!!",
-  date: "15 Nov to 31 Dec",
+  discount: '30% OFF',
+  title: 'Fine kick!!',
+  date: '15 Nov to 31 Dec',
   image: docmart,
-  title2: "Dr.Martens 1460",
-  title3: "Winter Sale",
-  title4:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  bgColor: "#561E1F",
+  title2: 'Dr.Martens 1460',
+  title3: 'Winter Sale',
+  title4: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis',
+  bgColor: '#561E1F',
+  item: '/item/1',
 };
 
 const BannerData2 = {
-  discount: "30% OFF",
-  title: "Happy Music!",
-  date: "15 Nov to 31 Dec",
+  discount: '30% OFF',
+  title: 'Happy Music!',
+  date: '15 Nov to 31 Dec',
   image: vinyl,
-  title2: "Antique Vinyl",
-  title3: "Winter Sale",
-  title4:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
-  bgColor: "#A69563",
+  title2: 'Antique Vinyl',
+  title3: 'Winter Sale',
+  title4: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis',
+  bgColor: '#A69563',
+  item:"/item/47"
 };
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
-  const [category, setCategory] = React.useState("all");  // Set default category to 'all'
+  const [category, setCategory] = React.useState('all'); // Set default category to 'all'
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
@@ -50,7 +50,7 @@ const App = () => {
   React.useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: "ease-in-sine",
+      easing: 'ease-in-sine',
       delay: 100,
       offset: 100,
     });
@@ -64,7 +64,8 @@ const App = () => {
       <Category2 />
       <Services />
       <Banner data={BannerData} />
-      <Items category={category} setCategory={setCategory} /> {/* Pass category and setCategory here */}
+      <Items category={category} setCategory={setCategory} />{' '}
+      {/* Pass category and setCategory here */}
       <Banner data={BannerData2} />
       <Blogs />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
