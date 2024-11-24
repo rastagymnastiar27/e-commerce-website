@@ -83,7 +83,7 @@ const ItemPage = () => {
         {/* Details Container */}
         <div className="flex flex-col w-full lg:w-1/4 justify-center p-4 rounded-lg">
           <h1 className="text-lg lg:text-2xl font-semibold mt-4">{itemDetails.title}</h1>
-          <p className="mt-2 text-md">${itemDetails.price}</p>
+          <p className="mt-2 text-md">${itemDetails.price + ".00"}</p>
           <p className="mt-4 text-sm text-black dark:text-white italic text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
