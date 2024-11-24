@@ -20,7 +20,7 @@ const Category = () => {
                   Graphic T-Shirts
                 </p>
                 <Link
-                to={`/shop?category=t-tops`}>
+                to={`/shop?category=tops`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-primary"}
@@ -45,7 +45,7 @@ const Category = () => {
                   Jackets
                 </p>
                 <Link
-                to={`/shop?category=outerwears`}>
+                to={`/shop?category=outerwear`}>
                   <Button
                     text="Browse"
                     bgColor={"bg-white"}

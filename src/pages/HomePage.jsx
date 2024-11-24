@@ -41,6 +41,7 @@ const BannerData2 = {
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
+  const [category, setCategory] = React.useState("all");  // Set default category to 'all'
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
@@ -63,7 +64,7 @@ const App = () => {
       <Category2 />
       <Services />
       <Banner data={BannerData} />
-      <Items />
+      <Items category={category} setCategory={setCategory} /> {/* Pass category and setCategory here */}
       <Banner data={BannerData2} />
       <Blogs />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />

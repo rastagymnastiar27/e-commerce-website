@@ -5,7 +5,7 @@
       "imgName": "shoes-1.png",
       "title": "Dr.Martens 1460 Red Cherry",
       "price": "400",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 2,
@@ -19,21 +19,21 @@
       "imgName": "shoes-3.png",
       "title": "Puma Palermo",
       "price": "220",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 4,
       "imgName": "shoes-4.png",
       "title": "Adidas Samba",
       "price": "90",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 5,
       "imgName": "shoes-5.png",
       "title": "Solomon",
       "price": "360",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 6,
@@ -47,21 +47,21 @@
       "imgName": "shoes-7.png",
       "title": "Loafers",
       "price": "140",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 8,
       "imgName": "shoes-8.png",
       "title": "Air Jordan",
       "price": "300",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 9,
       "imgName": "shoes-9.png",
       "title": "Vans",
       "price": "82",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 10,
@@ -75,14 +75,14 @@
       "imgName": "shoes-11.png",
       "title": "New Balance 2002r",
       "price": "220",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 12,
       "imgName": "shoes-12.png",
       "title": "Converse",
       "price": "80",
-      "aosDelay": "600"
+      "aosDelay": "200"
     }
   ],
   "Outerwear": [
@@ -91,7 +91,7 @@
       "imgName": "jackets-1.png",
       "title": "Vintage Leather Jacket",
       "price": "250",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 14,
@@ -105,21 +105,21 @@
       "imgName": "jackets-3.png",
       "title": "Carhartt Jacket",
       "price": "250",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 16,
       "imgName": "jackets-4.png",
       "title": "Grey Denim Gilet",
       "price": "67",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 17,
       "imgName": "jackets-5.png",
       "title": "White Knitwear",
       "price": "190",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 18,
@@ -133,21 +133,21 @@
       "imgName": "jackets-7.png",
       "title": "Camo Denim Jacket",
       "price": "95",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 20,
       "imgName": "jackets-8.png",
       "title": "Black Graphic Knitwear",
       "price": "65",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 21,
       "imgName": "jackets-9.png",
       "title": "Denim Gilet",
       "price": "60",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 22,
@@ -161,14 +161,14 @@
       "imgName": "jackets-11.png",
       "title": "Wrangler Denim Jacket",
       "price": "80",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 24,
       "imgName": "jackets-12.png",
       "title": "Starter Jacket",
       "price": "68",
-      "aosDelay": "600"
+      "aosDelay": "200"
     }
   ],
   "tops": [
@@ -177,7 +177,7 @@
       "imgName": "tops-1.png",
       "title": "Jenny Band T-Shirt",
       "price": "8",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 26,
@@ -191,21 +191,21 @@
       "imgName": "tops-3.png",
       "title": "Black Graphic T-Shirt",
       "price": "9",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 28,
       "imgName": "tops-4.png",
       "title": "Flannel Red and Black",
       "price": "14",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 29,
       "imgName": "tops-5.png",
       "title": "Flannel Red",
       "price": "10",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 30,
@@ -219,21 +219,21 @@
       "imgName": "tops-7.png",
       "title": "Trump Graphic T-Shirt",
       "price": "13",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 32,
       "imgName": "tops-8.png",
       "title": "Black Jersey",
       "price": "15",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 33,
       "imgName": "tops-9.png",
       "title": "Leopard T-Shirt",
       "price": "8",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 34,
@@ -247,14 +247,14 @@
       "imgName": "tops-11.png",
       "title": "Flannel Black and wHITE",
       "price": "9",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 36,
       "imgName": "tops-12.png",
       "title": "Printed Shirt",
       "price": "18",
-      "aosDelay": "600"
+      "aosDelay": "200"
     }
   ],
   "accessories": [
@@ -263,7 +263,7 @@
       "imgName": "accessories-1.png",
       "title": "Cross Ring",
       "price": "3",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 38,
@@ -277,21 +277,21 @@
       "imgName": "accessories-3.png",
       "title": "THXNSM Trucker Hat",
       "price": "10",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 40,
       "imgName": "accessories-4.png",
       "title": "Keychain",
       "price": "4",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 41,
       "imgName": "accessories-5.png",
       "title": "Heart Cross Ring",
       "price": "5",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 42,
@@ -305,21 +305,21 @@
       "imgName": "accessories-7.png",
       "title": "King's Ring",
       "price": "4",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 44,
       "imgName": "accessories-8.png",
       "title": "Black Caps",
       "price": "7",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 45,
       "imgName": "accessories-9.png",
       "title": "Necklace",
       "price": "",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 46,
@@ -333,14 +333,14 @@
       "imgName": "accessories-11.png",
       "title": "THXNSM Black Hats",
       "price": "9",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 48,
       "imgName": "accessories-12.png",
       "title": "Camo Hats",
       "price": "10",
-      "aosDelay": "600"
+      "aosDelay": "200"
     }
   ],
   "shorts": [
@@ -349,7 +349,7 @@
       "imgName": "shorts-1.png",
       "title": "Vintage Jorts",
       "price": "40",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 50,
@@ -363,21 +363,21 @@
       "imgName": "shorts-3.png",
       "title": "Stars Blue Jorts",
       "price": "36",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 52,
       "imgName": "shorts-4.png",
       "title": "Blue Jorts",
       "price": "25",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 53,
       "imgName": "shorts-5.png",
       "title": "Graphic Jorts",
       "price": "42",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 54,
@@ -391,21 +391,21 @@
       "imgName": "shorts-7.png",
       "title": "Black Shorts",
       "price": "4",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 56,
       "imgName": "shorts-8.png",
       "title": "Polyster Black Broadpants",
       "price": "7",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 57,
       "imgName": "shorts-9.png",
       "title": "Cream Shorts",
       "price": "4",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 58,
@@ -419,14 +419,14 @@
       "imgName": "shorts-11.png",
       "title": "Brown Jorts",
       "price": "21",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 60,
       "imgName": "shorts-12.png",
       "title": "Grey Denim Shorts",
       "price": "19",
-      "aosDelay": "600"
+      "aosDelay": "200"
     }
   ],
   "pants": [
@@ -435,7 +435,7 @@
       "imgName": "pants-1.png",
       "title": "Vintage Baggy Jeans",
       "price": "50",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 62,
@@ -449,21 +449,21 @@
       "imgName": "pants-3.png",
       "title": "Camo Pants",
       "price": "24",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 64,
       "imgName": "pants-4.png",
       "title": "Blue Jeans",
       "price": "25",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 65,
       "imgName": "pants-5.png",
       "title": "Levi's Blue Regular Jeans",
       "price": "36",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 66,
@@ -477,21 +477,21 @@
       "imgName": "pants-7.png",
       "title": "Ripped Grey Baggy Jeans",
       "price": "38",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 68,
       "imgName": "pants-8.png",
       "title": "Wash Denim Pants",
       "price": "40",
-      "aosDelay": "600"
+      "aosDelay": "200"
     },
     {
       "id": 69,
       "imgName": "pants-9.png",
       "title": "Blue Jeans",
       "price": "20",
-      "aosDelay": "0"
+      "aosDelay": "200"
     },
     {
       "id": 70,
@@ -505,14 +505,520 @@
       "imgName": "pants-11.png",
       "title": "Grey Jeans",
       "price": "",
-      "aosDelay": "400"
+      "aosDelay": "200"
     },
     {
       "id": 72,
       "imgName": "pants-12.png",
       "title": "Deep Blue Jeans",
       "price": "26",
-      "aosDelay": "600"
+      "aosDelay": "200"
+    }
+  ],
+  "allcatalogs": [
+    {
+      "id": 10,
+      "imgName": "shoes-10.png",
+      "title": "Timberland",
+      "price": "320",
+      "aosDelay": "200"
+    },
+    {
+      "id": 52,
+      "imgName": "shorts-4.png",
+      "title": "Blue Jorts",
+      "price": "25",
+      "aosDelay": "200"
+    },
+    {
+      "id": 35,
+      "imgName": "tops-11.png",
+      "title": "Flannel Black and wHITE",
+      "price": "9",
+      "aosDelay": "200"
+    },
+    {
+      "id": 6,
+      "imgName": "shoes-6.png",
+      "title": "Dr.Martens 1461",
+      "price": "340",
+      "aosDelay": "200"
+    },
+    {
+      "id": 30,
+      "imgName": "tops-6.png",
+      "title": "Bob Marley T-Shirt",
+      "price": "15",
+      "aosDelay": "200"
+    },
+    {
+      "id": 43,
+      "imgName": "accessories-7.png",
+      "title": "King's Ring",
+      "price": "4",
+      "aosDelay": "200"
+    },
+    {
+      "id": 5,
+      "imgName": "shoes-5.png",
+      "title": "Solomon",
+      "price": "360",
+      "aosDelay": "200"
+    },
+    {
+      "id": 67,
+      "imgName": "pants-7.png",
+      "title": "Ripped Grey Baggy Jeans",
+      "price": "38",
+      "aosDelay": "200"
+    },
+    {
+      "id": 12,
+      "imgName": "shoes-12.png",
+      "title": "Converse",
+      "price": "80",
+      "aosDelay": "200"
+    },
+    {
+      "id": 31,
+      "imgName": "tops-7.png",
+      "title": "Trump Graphic T-Shirt",
+      "price": "13",
+      "aosDelay": "200"
+    },
+    {
+      "id": 3,
+      "imgName": "shoes-3.png",
+      "title": "Puma Palermo",
+      "price": "220",
+      "aosDelay": "200"
+    },
+    {
+      "id": 65,
+      "imgName": "pants-5.png",
+      "title": "Levi's Blue Regular Jeans",
+      "price": "36",
+      "aosDelay": "200"
+    },
+    {
+      "id": 44,
+      "imgName": "accessories-8.png",
+      "title": "Black Caps",
+      "price": "7",
+      "aosDelay": "200"
+    },
+    {
+      "id": 48,
+      "imgName": "accessories-12.png",
+      "title": "Camo Hats",
+      "price": "10",
+      "aosDelay": "200"
+    },
+    {
+      "id": 4,
+      "imgName": "shoes-4.png",
+      "title": "Adidas Samba",
+      "price": "90",
+      "aosDelay": "200"
+    },
+    {
+      "id": 33,
+      "imgName": "tops-9.png",
+      "title": "Leopard T-Shirt",
+      "price": "8",
+      "aosDelay": "200"
+    },
+    {
+      "id": 62,
+      "imgName": "pants-2.png",
+      "title": "Leopard Pants",
+      "price": "14",
+      "aosDelay": "200"
+    },
+    {
+      "id": 61,
+      "imgName": "pants-1.png",
+      "title": "Vintage Baggy Jeans",
+      "price": "50",
+      "aosDelay": "200"
+    },
+    {
+      "id": 37,
+      "imgName": "accessories-1.png",
+      "title": "Cross Ring",
+      "price": "3",
+      "aosDelay": "200"
+    },
+    {
+      "id": 64,
+      "imgName": "pants-4.png",
+      "title": "Blue Jeans",
+      "price": "25",
+      "aosDelay": "200"
+    },
+    {
+      "id": 68,
+      "imgName": "pants-8.png",
+      "title": "Wash Denim Pants",
+      "price": "40",
+      "aosDelay": "200"
+    },
+    {
+      "id": 32,
+      "imgName": "tops-8.png",
+      "title": "Black Jersey",
+      "price": "15",
+      "aosDelay": "200"
+    },
+    {
+      "id": 9,
+      "imgName": "shoes-9.png",
+      "title": "Vans",
+      "price": "82",
+      "aosDelay": "200"
+    },
+    {
+      "id": 14,
+      "imgName": "jackets-2.png",
+      "title": "Carhartt Work Jacket",
+      "price": "200",
+      "aosDelay": "200"
+    },
+    {
+      "id": 28,
+      "imgName": "tops-4.png",
+      "title": "Flannel Red and Black",
+      "price": "14",
+      "aosDelay": "200"
+    },
+    {
+      "id": 1,
+      "imgName": "shoes-1.png",
+      "title": "Dr.Martens 1460 Red Cherry",
+      "price": "400",
+      "aosDelay": "200"
+    },
+    {
+      "id": 51,
+      "imgName": "shorts-3.png",
+      "title": "Stars Blue Jorts",
+      "price": "36",
+      "aosDelay": "200"
+    },
+    {
+      "id": 69,
+      "imgName": "pants-9.png",
+      "title": "Blue Jeans",
+      "price": "20",
+      "aosDelay": "200"
+    },
+    {
+      "id": 72,
+      "imgName": "pants-12.png",
+      "title": "Deep Blue Jeans",
+      "price": "26",
+      "aosDelay": "200"
+    },
+    {
+      "id": 13,
+      "imgName": "jackets-1.png",
+      "title": "Vintage Leather Jacket",
+      "price": "250",
+      "aosDelay": "200"
+    },
+    {
+      "id": 11,
+      "imgName": "shoes-11.png",
+      "title": "New Balance 2002r",
+      "price": "220",
+      "aosDelay": "200"
+    },
+    {
+      "id": 57,
+      "imgName": "shorts-9.png",
+      "title": "Cream Shorts",
+      "price": "4",
+      "aosDelay": "200"
+    },
+    {
+      "id": 29,
+      "imgName": "tops-5.png",
+      "title": "Flannel Red",
+      "price": "10",
+      "aosDelay": "200"
+    },
+    {
+      "id": 23,
+      "imgName": "jackets-11.png",
+      "title": "Wrangler Denim Jacket",
+      "price": "80",
+      "aosDelay": "200"
+    },
+    {
+      "id": 54,
+      "imgName": "shorts-6.png",
+      "title": "Camo Shorts",
+      "price": "8",
+      "aosDelay": "200"
+    },
+    {
+      "id": 34,
+      "imgName": "tops-10.png",
+      "title": "THXNSM T-Short",
+      "price": "8",
+      "aosDelay": "200"
+    },
+    {
+      "id": 63,
+      "imgName": "pants-3.png",
+      "title": "Camo Pants",
+      "price": "24",
+      "aosDelay": "200"
+    },
+    {
+      "id": 47,
+      "imgName": "accessories-11.png",
+      "title": "THXNSM Black Hats",
+      "price": "9",
+      "aosDelay": "200"
+    },
+    {
+      "id": 17,
+      "imgName": "jackets-5.png",
+      "title": "White Knitwear",
+      "price": "190",
+      "aosDelay": "200"
+    },
+    {
+      "id": 7,
+      "imgName": "shoes-7.png",
+      "title": "Loafers",
+      "price": "140",
+      "aosDelay": "200"
+    },
+    {
+      "id": 55,
+      "imgName": "shorts-7.png",
+      "title": "Black Shorts",
+      "price": "4",
+      "aosDelay": "200"
+    },
+    {
+      "id": 26,
+      "imgName": "tops-2.png",
+      "title": "Grey Graphic T-Shirt",
+      "price": "8",
+      "aosDelay": "200"
+    },
+    {
+      "id": 19,
+      "imgName": "jackets-7.png",
+      "title": "Camo Denim Jacket",
+      "price": "95",
+      "aosDelay": "200"
+    },
+    {
+      "id": 58,
+      "imgName": "shorts-10.png",
+      "title": "Cream Broadpants",
+      "price": "4",
+      "aosDelay": "200"
+    },
+    {
+      "id": 25,
+      "imgName": "tops-1.png",
+      "title": "Jenny Band T-Shirt",
+      "price": "8",
+      "aosDelay": "200"
+    },
+    {
+      "id": 42,
+      "imgName": "accessories-6.png",
+      "title": "Grandpa Belt",
+      "price": "3",
+      "aosDelay": "200"
+    },
+    {
+      "id": 40,
+      "imgName": "accessories-4.png",
+      "title": "Keychain",
+      "price": "4",
+      "aosDelay": "200"
+    },
+    {
+      "id": 46,
+      "imgName": "accessories-10.png",
+      "title": "THXNSM Red Trucker Hat",
+      "price": "13",
+      "aosDelay": "200"
+    },
+    {
+      "id": 27,
+      "imgName": "tops-3.png",
+      "title": "Black Graphic T-Shirt",
+      "price": "9",
+      "aosDelay": "200"
+    },
+    {
+      "id": 50,
+      "imgName": "shorts-2.png",
+      "title": "Blue Wash Jorts",
+      "price": "32",
+      "aosDelay": "200"
+    },
+    {
+      "id": 53,
+      "imgName": "shorts-5.png",
+      "title": "Graphic Jorts",
+      "price": "42",
+      "aosDelay": "200"
+    },
+    {
+      "id": 36,
+      "imgName": "tops-12.png",
+      "title": "Printed Shirt",
+      "price": "18",
+      "aosDelay": "200"
+    },
+    {
+      "id": 21,
+      "imgName": "jackets-9.png",
+      "title": "Denim Gilet",
+      "price": "60",
+      "aosDelay": "200"
+    },
+    {
+      "id": 15,
+      "imgName": "jackets-3.png",
+      "title": "Carhartt Jacket",
+      "price": "250",
+      "aosDelay": "200"
+    },
+    {
+      "id": 2,
+      "imgName": "shoes-2.png",
+      "title": "Nike TN",
+      "price": "300",
+      "aosDelay": "200"
+    },
+    {
+      "id": 38,
+      "imgName": "accessories-2.png",
+      "title": "Vintage Belt",
+      "price": "7",
+      "aosDelay": "200"
+    },
+    {
+      "id": 22,
+      "imgName": "jackets-10.png",
+      "title": "Denim Jacket",
+      "price": "82",
+      "aosDelay": "200"
+    },
+    {
+      "id": 18,
+      "imgName": "jackets-6.png",
+      "title": "Carhartt Jacket",
+      "price": "150",
+      "aosDelay": "200"
+    },
+    {
+      "id": 49,
+      "imgName": "shorts-1.png",
+      "title": "Vintage Jorts",
+      "price": "40",
+      "aosDelay": "200"
+    },
+    {
+      "id": 16,
+      "imgName": "jackets-4.png",
+      "title": "Grey Denim Gilet",
+      "price": "67",
+      "aosDelay": "200"
+    },
+    {
+      "id": 59,
+      "imgName": "shorts-11.png",
+      "title": "Brown Jorts",
+      "price": "21",
+      "aosDelay": "200"
+    },
+    {
+      "id": 56,
+      "imgName": "shorts-8.png",
+      "title": "Polyster Black Broadpants",
+      "price": "7",
+      "aosDelay": "200"
+    },
+    {
+      "id": 66,
+      "imgName": "pants-6.png",
+      "title": "Khaki Pants",
+      "price": "18",
+      "aosDelay": "200"
+    },
+    {
+      "id": 24,
+      "imgName": "jackets-12.png",
+      "title": "Starter Jacket",
+      "price": "68",
+      "aosDelay": "200"
+    },
+    {
+      "id": 60,
+      "imgName": "shorts-12.png",
+      "title": "Grey Denim Shorts",
+      "price": "19",
+      "aosDelay": "200"
+    },
+    {
+      "id": 41,
+      "imgName": "accessories-5.png",
+      "title": "Heart Cross Ring",
+      "price": "5",
+      "aosDelay": "200"
+    },
+    {
+      "id": 45,
+      "imgName": "accessories-9.png",
+      "title": "Necklace",
+      "price": "",
+      "aosDelay": "200"
+    },
+    {
+      "id": 20,
+      "imgName": "jackets-8.png",
+      "title": "Black Graphic Knitwear",
+      "price": "65",
+      "aosDelay": "200"
+    },
+    {
+      "id": 8,
+      "imgName": "shoes-8.png",
+      "title": "Air Jordan",
+      "price": "300",
+      "aosDelay": "200"
+    },
+    {
+      "id": 39,
+      "imgName": "accessories-3.png",
+      "title": "THXNSM Trucker Hat",
+      "price": "10",
+      "aosDelay": "200"
+    },
+    {
+      "id": 70,
+      "imgName": "pants-10.png",
+      "title": "Blue Boot-Cutted Jeans",
+      "price": "25",
+      "aosDelay": "200"
+    },
+    {
+      "id": 71,
+      "imgName": "pants-11.png",
+      "title": "Grey Jeans",
+      "price": "",
+      "aosDelay": "200"
     }
   ]
 }
