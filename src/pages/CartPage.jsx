@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { formatCurrency } from '../utils/formatCurrency';
-import { FaTrash } from 'react-icons/fa'; // Import icon trash
+import { FaTrash } from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa6';
 
 const CartPage = () => {
-  const { cartItems, removeFromCart } = useCart(); // Tambahkan removeFromCart dari context
+  const { cartItems, removeFromCart } = useCart();
 
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -12,6 +14,17 @@ const CartPage = () => {
 
   return (
     <div className="mx-auto dark:text-white duration-200">
+      <section className="container mx-auto py-4 w-auto">
+        <div className="w-48 justify-center items-center">
+          <Link
+            to="/shop"
+            className="text-black dark:text-white hover:text-primary dark:hover:text-primary 
+            flex items-center"
+          >
+            <FaArrowLeft className="mr-2" /> Back to catalog page
+          </Link>
+        </div>
+      </section>
       <section
         className="container mx-auto py-4 group shadow-[0_0_10px_1px_rgba(0,0,0,0.3)] rounded-lg 
         bg-gradient-to-br 
@@ -57,15 +70,19 @@ const CartPage = () => {
             </div>
           )}
         </div>
-        <div className="flex justify-between items-center p-4 border-t-2 border-black 
-        dark:border-white">
+        <div
+          className="flex justify-between items-center p-4 border-t-2 border-black 
+        dark:border-white"
+        >
           <h2 className="font-semibold text-xl">Total:</h2>
           <p className="text-xl">{formatCurrency(calculateTotal())}</p>
         </div>
         {/* Checkout Button */}
         <div className="mt-6 flex justify-center">
-          <button className="bg-black text-white hover:bg-white hover:text-black px-6 
-          py-2 rounded-lg duration-200">
+          <button
+            className="bg-black text-white hover:bg-white hover:text-black px-6 
+          py-2 rounded-lg duration-200"
+          >
             Proceed to Checkout
           </button>
         </div>
