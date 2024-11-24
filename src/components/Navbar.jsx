@@ -45,7 +45,8 @@ const Navbar = ({ cartItems }) => {
                   <li key={index}>
                     <NavLink
                       to={data.link}
-                      className="inline-block px-4 font-semibold text-black hover:text-white dark:text-white dark:hover:text-black duration-200"
+                      className="inline-block px-4 font-semibold text-black hover:text-white 
+                      dark:text-white dark:hover:text-black duration-200"
                     >
                       {data.name}
                     </NavLink>
@@ -56,7 +57,8 @@ const Navbar = ({ cartItems }) => {
                 <li className="relative cursor-pointer group">
                   <NavLink
                     to="#"
-                    className="flex items-center gap-[2px] font-semibold text-black dark:text-white dark:hover:text-black py-2 duration-200"
+                    className="flex items-center gap-[2px] font-semibold text-black dark:text-white 
+                    hover:text-white dark:hover:text-black py-2 duration-200"
                   >
                     Quick Links
                     <span>
@@ -65,12 +67,15 @@ const Navbar = ({ cartItems }) => {
                   </NavLink>
 
                   {/* Dropdown Links */}
-                  <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white">
+                  <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md 
+                  bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white">
                     <ul className="space-y-2">
                       {DropdownLinks.map((data, index) => (
                         <li key={index}>
                           <NavLink
-                            className="text-black hover:text-white dark:hover:text-black duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
+                            className="text-black hover:text-white dark:text-white dark:hover:text-black 
+                            duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                            font-semibold "
                             to={data.link}
                           >
                             {data.name}
@@ -120,7 +125,8 @@ const Navbar = ({ cartItems }) => {
           <div className="flex lg:hidden items-center gap-4">
             <NavLink to="/cart" className="relative p-3">
               <FaCartShopping className="text-xl text-black dark:text-white" />
-              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
+              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 
+              right-0 flex items-center justify-center text-xs">
               {totalItems}
               </div>
             </NavLink>
@@ -148,12 +154,14 @@ const Navbar = ({ cartItems }) => {
 
       {/* Full-page menu for small screens */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden transition-opacity duration-200 h-full ${
+        className={`fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden transition-opacity 
+          duration-200 h-full ${
           isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
       >
         <div
-          className={`bg-black/10 backdrop-blur-md w-[75%] h-full p-6 absolute right-0 top-0 flex flex-col gap-6 transition-transform duration-200 ${
+          className={`bg-black/10 backdrop-blur-md w-[75%] h-full p-6 absolute right-0 top-0 
+            flex flex-col gap-6 transition-transform duration-200 ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -181,9 +189,11 @@ const Navbar = ({ cartItems }) => {
               placeholder="Search"
               value={searchQuery}
               onChange={handleSearchChange}
-              className="w-full p-2 pl-10 rounded-lg text-white placeholder:text-gray-400 bg-transparent border-2 border-gray-300 dark:border-gray-700 focus:outline-none"
+              className="w-full p-2 pl-10 rounded-lg text-white placeholder:text-gray-400 
+              bg-transparent border-2 border-gray-300 dark:border-gray-700 focus:outline-none"
             />
-            <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-400 dark:text-white" />
+            <IoMdSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-gray-400 
+            dark:text-white" />
           </div>
 
           <ul className="flex flex-col items-start gap-4">
@@ -194,7 +204,8 @@ const Navbar = ({ cartItems }) => {
               >
                 <NavLink
                   to={data.link}
-                  className="text-xl font-semibold text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-black"
+                  className="text-xl font-semibold text-gray-400 dark:text-gray-500 
+                  hover:text-black dark:hover:text-black"
                 >
                   {data.name}
                 </NavLink>

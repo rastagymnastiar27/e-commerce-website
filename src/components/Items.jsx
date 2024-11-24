@@ -18,7 +18,6 @@ const Items = ({ category, setCategory, showPagination = false }) => {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    setCurrentPage(1);
     AOS.init({
       duration: 1000,
     });
@@ -50,7 +49,6 @@ const Items = ({ category, setCategory, showPagination = false }) => {
       ...pantsData,
     ];
 
-    //all-catalogs random data
     const randomData = [...allCatalogsData];
 
     let filteredItems;
@@ -59,8 +57,6 @@ const Items = ({ category, setCategory, showPagination = false }) => {
     } else {
       filteredItems = allData.filter((item) => item.category === category);
     }
-    
-  console.log('Filtered Items:', filteredItems);
 
     const isHomePage = pathname === '/';
     const displayedItems = isHomePage ? filteredItems.slice(0, 8) : filteredItems;
@@ -73,12 +69,15 @@ const Items = ({ category, setCategory, showPagination = false }) => {
       (currentPage - 1) * itemsPerPage,
       currentPage * itemsPerPage
     );
-    
-  console.log('Displayed Items:', displayedItems);
 
     setItems(paginatedItems);
     setLoading(false);
   }, [pathname, category, currentPage]);
+
+  // Reset currentPage to 1 only when category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [category]);
 
   // Handle page change
   const handlePageChange = (page) => {
@@ -93,20 +92,18 @@ const Items = ({ category, setCategory, showPagination = false }) => {
   return (
     <div className="container py-6">
       {/* Header section */}
-      <Link
-        to="/shop"
-      >
+      <Link to="/shop">
         <Heading title="Our Catalogs" subtitle={'Explore Our Items'} />
       </Link>
 
       {/* Category Dropdown (Hidden on Home Page) */}
       {pathname !== '/' && (
-        <div className="mb-6 mt-4 flex justify-center items-center lg:justify-end">
+        <div className="mb-6 mt-4 flex justify-center items-center lg:justify-end font-mono">
           <li className="relative cursor-pointer group list-none top-4 lg:right-0">
             <NavLink
               to="#"
-              className="flex items-center gap-[2px] font-semibold text-black dark:text-gray-300 
-              dark:hover:text-white py-2 duration-200 w-40 justify-center"
+              className="flex items-center gap-[2px] font-semibold text-black dark:text-white
+              dark:hover:text-white py-2 duration-200 w-40 justify-center lg:text-xl"
             >
               {category === 'all'
                 ? 'All Catalogs'
@@ -117,28 +114,56 @@ const Items = ({ category, setCategory, showPagination = false }) => {
             {/* Dropdown Links */}
             <div
               className="absolute z-[9999] hidden group-hover:block w-[130px] rounded-md 
-            bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white left-3"
+            bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white left-3 lg:text-lg"
             >
               <ul className="space-y-2">
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('all')}>All Catalogs</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('footwear')}>Footwear</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('outerwear')}>Outerwear</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('tops')}>Tops</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('accessories')}>Accessories</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('shorts')}>Shorts</button>
                 </li>
-                <li>
+                <li
+                  className="hover:text-white dark:text-white dark:hover:text-black 
+                    duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md 
+                    font-semibold"
+                >
                   <button onClick={() => setCategory('pants')}>Pants</button>
                 </li>
               </ul>
@@ -152,11 +177,11 @@ const Items = ({ category, setCategory, showPagination = false }) => {
 
       {/* Pagination - Only show on Shop Page */}
       {showPagination && (
-        <div className="flex justify-center mt-6 space-x-4">
+        <div className="flex justify-center mt-6 space-x-2 lg:space-x-4">
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className="px-4 py-2 text-xl rounded-md hover:text-red-500 cursor-pointer"
+            className="px-4 py-2 text-sm lg:text-xl rounded-md hover:text-red-500 cursor-pointer"
           >
             &lt;
           </button>
@@ -165,7 +190,7 @@ const Items = ({ category, setCategory, showPagination = false }) => {
               <button
                 key={index + 1}
                 onClick={() => handlePageChange(index + 1)}
-                className={`px-4 py-2 mx-1 border rounded-md hover:bg-red-800 ${
+                className={`px-3 py-1  lg:px-4 lg:py-2 mx-1 border rounded-md hover:bg-red-800 ${
                   currentPage === index + 1 ? 'bg-primary text-white' : ''
                 } cursor-pointer`}
               >
@@ -176,7 +201,7 @@ const Items = ({ category, setCategory, showPagination = false }) => {
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 text-xl rounded-md hover:text-red-500 cursor-pointer"
+            className="px-3 py-1 lg:px-4 lg:py-2 text-md lg:text-xl rounded-md hover:text-red-500 cursor-pointer"
           >
             &gt;
           </button>
