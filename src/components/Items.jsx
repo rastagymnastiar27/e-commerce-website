@@ -6,7 +6,7 @@ import Heading from '../components/Heading';
 import ItemCard from './ItemCard';
 import Spinner from './Spinner';
 import itemsData from '../items.json';
-import AOS from 'aos'; 
+import AOS from 'aos';
 
 const getImagePath = (imgName) => `/assets/product/${imgName}`;
 
@@ -18,6 +18,7 @@ const Items = ({ category, setCategory, showPagination = false }) => {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
+    setCurrentPage(1);
     AOS.init({
       duration: 1000,
     });
@@ -50,9 +51,7 @@ const Items = ({ category, setCategory, showPagination = false }) => {
     ];
 
     //all-catalogs random data
-    const randomData = [
-      ...allCatalogsData
-    ]
+    const randomData = [...allCatalogsData];
 
     let filteredItems;
     if (category === 'all') {
@@ -60,6 +59,8 @@ const Items = ({ category, setCategory, showPagination = false }) => {
     } else {
       filteredItems = allData.filter((item) => item.category === category);
     }
+    
+  console.log('Filtered Items:', filteredItems);
 
     const isHomePage = pathname === '/';
     const displayedItems = isHomePage ? filteredItems.slice(0, 8) : filteredItems;
@@ -72,6 +73,8 @@ const Items = ({ category, setCategory, showPagination = false }) => {
       (currentPage - 1) * itemsPerPage,
       currentPage * itemsPerPage
     );
+    
+  console.log('Displayed Items:', displayedItems);
 
     setItems(paginatedItems);
     setLoading(false);
@@ -108,16 +111,32 @@ const Items = ({ category, setCategory, showPagination = false }) => {
             </NavLink>
 
             {/* Dropdown Links */}
-            <div className="absolute z-[9999] hidden group-hover:block w-[130px] rounded-md 
-            bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white left-3">
+            <div
+              className="absolute z-[9999] hidden group-hover:block w-[130px] rounded-md 
+            bg-gray-400 dark:bg-gray-600 shadow-md p-2 dark:text-white left-3"
+            >
               <ul className="space-y-2">
-                <li><button onClick={() => setCategory('all')}>All Catalogs</button></li>
-                <li><button onClick={() => setCategory('footwear')}>Footwear</button></li>
-                <li><button onClick={() => setCategory('outerwear')}>Outerwear</button></li>
-                <li><button onClick={() => setCategory('tops')}>Tops</button></li>
-                <li><button onClick={() => setCategory('accessories')}>Accessories</button></li>
-                <li><button onClick={() => setCategory('shorts')}>Shorts</button></li>
-                <li><button onClick={() => setCategory('pants')}>Pants</button></li>
+                <li>
+                  <button onClick={() => setCategory('all')}>All Catalogs</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('footwear')}>Footwear</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('outerwear')}>Outerwear</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('tops')}>Tops</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('accessories')}>Accessories</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('shorts')}>Shorts</button>
+                </li>
+                <li>
+                  <button onClick={() => setCategory('pants')}>Pants</button>
+                </li>
               </ul>
             </div>
           </li>

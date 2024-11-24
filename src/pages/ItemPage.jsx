@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, NavLink } from 'react-router-dom';
+import { useParams, NavLink, useLocation } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
 import itemsData from '../items.json';
@@ -11,6 +11,10 @@ const ItemPage = () => {
   const { addToCart } = useCart();
   const [itemDetails, setItemDetails] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [useLocation()]); 
 
   useEffect(() => {
     const fetchItem = async () => {

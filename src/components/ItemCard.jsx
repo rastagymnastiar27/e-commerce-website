@@ -42,7 +42,7 @@ const ItemCard = ({ item }) => {
           </div>
           <div className="leading-7 px-2 shadow-[0_0_10px_1px_rgba(0,0,0,0.3)]">
             <h2 className="font-semibold text-xs md:text-lg">{item.title}</h2>
-            <h2 className="font-bold text-xs md:text-lg mt-2">${item.price}</h2>
+            <h2 className="font-bold text-xs md:text-lg mt-2">${item.price + ".00"}</h2>
           </div>
         </div>
       ))}

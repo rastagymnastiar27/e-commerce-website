@@ -9,7 +9,7 @@ const ShopPage = () => {
   const [orderPopup, setOrderPopup] = useState(false);
   const [category, setCategory] = useState("all"); // Default to 'all'
   
-  const { search } = useLocation(); // Get query params from the URL
+  const { search } = useLocation(); 
   const queryParams = new URLSearchParams(search);
 
   useEffect(() => {
