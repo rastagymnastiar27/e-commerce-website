@@ -13,6 +13,7 @@ const HeroData = [
     subtitle: "Dr. Martens",
     title: "1460 Red Cherry",
     title2: "FootWear",
+    category: `/shop?category=footwear`,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const HeroData = [
     subtitle: "Thanksinsomnia",
     title: "Trucker Hats",
     title2: "accessories",
+    category: `/shop?category=accessories`,
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ const HeroData = [
     subtitle: "Vintage",
     title: "Leather Jacket",
     title2: "Outerwear",
+    category: `/shop?category=outerwear`,
   },
 ];
 
@@ -90,7 +93,7 @@ const Hero = ({ handleOrderPopup }) => {
                       data-aos-delay="300"
                     >
                       <Link
-                        to="/shop"
+                        to={data.category}
                       >
                         <Button
                           text="Shop By Category"
