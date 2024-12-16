@@ -1,4 +1,4 @@
-# Culture e-commerce
+# Culture e-commerce (React + Tailwind)
 This is a responsive e-commerce website built with React.js, Tailwind CSS, and Vite, which focuses on providing the latest trending fashion items. The site already includes basic features like displaying products on the homepage, shop page, item details page, blogs page, and cart page. 
 
 demo: https://culture-ecommerce.netlify.app/
